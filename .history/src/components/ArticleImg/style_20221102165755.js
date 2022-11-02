@@ -3,15 +3,12 @@ import styled from "styled-components";
 export const Wraper = styled.div`
   position: relative;
   &:hover {
-    &::before {
+    &:before {
       content: "";
-      position: absolute;
-      z-index: 100;
-      display: block;
-      height: 100%;
+      /* display: inline-block; */
       width: 100%;
-      background-color: #ffff;
-      opacity: 0.4;
+      height: 100%;
+      background-color: red;
     }
   }
   > span {

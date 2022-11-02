@@ -10,8 +10,8 @@ export const Wraper = styled.div`
       display: block;
       height: 100%;
       width: 100%;
-      background-color: #ffff;
-      opacity: 0.4;
+      background-color: red;
+      opacity: 0.5;
     }
   }
   > span {

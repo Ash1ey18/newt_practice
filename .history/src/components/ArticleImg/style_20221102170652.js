@@ -6,7 +6,7 @@ export const Wraper = styled.div`
     &::before {
       content: "";
       position: absolute;
-      z-index: 100;
+      /* z-index: 100; */
       display: block;
       height: 100%;
       width: 100%;

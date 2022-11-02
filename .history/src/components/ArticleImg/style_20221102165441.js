@@ -2,17 +2,10 @@ import styled from "styled-components";
 
 export const Wraper = styled.div`
   position: relative;
-  &:hover {
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 100;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background-color: #ffff;
-      opacity: 0.4;
-    }
+  &:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
   }
   > span {
     position: unset !important;

@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const Section = styled.section`
   padding: 20px 0;
   width: 100%;
-  background-color: ${(props) =>
-    props.where === "recomArti" ? "#FAFAFA" : "#FFFFF"};
+  background-color: ${(props) => ("false" ? "#FAFAFA" : "red")};
 
   > h2 {
     font-size: 20px;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 `;

@@ -5,13 +5,13 @@ export const Wraper = styled.div`
   &:hover {
     &::before {
       content: "";
-      position: absolute;
+      position: relative;
       z-index: 100;
       display: block;
-      height: 100%;
+      height: 100px;
       width: 100%;
-      background-color: #ffff;
-      opacity: 0.4;
+      background-color: red;
+      transform: translateX(100px);
     }
   }
   > span {

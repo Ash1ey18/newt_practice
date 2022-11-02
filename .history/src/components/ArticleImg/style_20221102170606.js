@@ -11,7 +11,7 @@ export const Wraper = styled.div`
       height: 100%;
       width: 100%;
       background-color: #ffff;
-      opacity: 0.4;
+      opacity: 0.5;
     }
   }
   > span {

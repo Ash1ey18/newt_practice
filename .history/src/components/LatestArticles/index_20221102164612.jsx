@@ -19,7 +19,7 @@ export default function LatesetArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="11" alt="heiyoo" />
+          <ArticleImg srcNo="10" alt="heiyoo" />
           <h1>
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </h1>
@@ -28,7 +28,7 @@ export default function LatesetArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="12" alt="heiyoo" />
+          <ArticleImg srcNo="10" alt="heiyoo" />
           <h1>
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </h1>
@@ -37,7 +37,7 @@ export default function LatesetArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="13" alt="heiyoo" />
+          <ArticleImg srcNo="10" alt="heiyoo" />
           <h1>
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </h1>
@@ -46,7 +46,7 @@ export default function LatesetArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="14" alt="heiyoo" />
+          <ArticleImg srcNo="10" alt="heiyoo" />
           <h1>
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </h1>

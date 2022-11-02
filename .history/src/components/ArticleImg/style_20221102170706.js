@@ -4,7 +4,7 @@ export const Wraper = styled.div`
   position: relative;
   &:hover {
     &::before {
-      content: "";
+      content: "バカヤロー！";
       position: absolute;
       z-index: 100;
       display: block;
