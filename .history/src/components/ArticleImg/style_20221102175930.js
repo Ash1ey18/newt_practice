@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wraper = styled.div`
   position: relative;
-  &:active {
+  &:hover {
     &::before {
       content: "";
       position: absolute;

@@ -40,7 +40,7 @@ export const Location = styled.div`
   grid-area: location;
 `;
 export const StyledLink = styled(Link)`
-  a:hover {
+  :hover {
     opacity: 0.6;
   }
 `;

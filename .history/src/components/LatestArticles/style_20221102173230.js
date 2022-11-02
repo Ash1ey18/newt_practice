@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
 
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
@@ -24,23 +23,18 @@ export const ArticleWraper = styled.div`
     overflow: hidden;
     grid-area: img;
   }
+
+  > h1 {
+  }
+
+  > div:nth-child(2) {
+    margin-top: 6px;
+    grid-area: location;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 12px;
   margin: 0;
-  grid-area: title;
-  :hover {
-    opacity: 0.6;
-  }
-`;
-
-export const Location = styled.div`
-  margin-top: 6px;
-  grid-area: location;
-`;
-export const StyledLink = styled(Link)`
-  a:hover {
-    opacity: 0.6;
-  }
+  grid-area: img;
 `;

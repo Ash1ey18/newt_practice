@@ -29,6 +29,7 @@ export const Title = styled.h2`
   font-size: 12px;
   margin: 0;
   & a:hover {
+    color: white;
     opacity: 0.6;
   }
 `;

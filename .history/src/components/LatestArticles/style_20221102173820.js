@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
 
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
@@ -38,9 +37,7 @@ export const Title = styled.h1`
 export const Location = styled.div`
   margin-top: 6px;
   grid-area: location;
-`;
-export const StyledLink = styled(Link)`
-  a:hover {
+  :hover {
     opacity: 0.6;
   }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wraper = styled.div`
   position: relative;
+  &:hover,
   &:active {
     &::before {
       content: "";

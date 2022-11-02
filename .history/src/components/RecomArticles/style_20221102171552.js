@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export const SectionWraper = styled.section`
   padding: 20px 0;
@@ -28,7 +29,11 @@ export const ArticleWraper = styled.div`
 export const Title = styled.h2`
   font-size: 12px;
   margin: 0;
-  & a:hover {
+`;
+
+export const StyledLink = styled(Link)`
+  :hover {
+    color: white;
     opacity: 0.6;
   }
 `;

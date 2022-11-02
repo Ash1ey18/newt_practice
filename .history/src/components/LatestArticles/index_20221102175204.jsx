@@ -49,7 +49,7 @@ export default function LatesetArticles() {
               width="14"
               height="14"
               fill="none"
-              viewBox="0 0 14 14"
+              // viewBox="0 0 14 14"
             >
               <path
                 fill="#00CD67"

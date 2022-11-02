@@ -3,13 +3,7 @@ import Link from "next/link";
 
 import SectionWraper from "src/components/SectionWraper";
 import ArticleImg from "src/components/ArticleImg";
-import {
-  ArticlesWraper,
-  ArticleWraper,
-  Title,
-  Location,
-  StyledLink,
-} from "./style";
+import { ArticlesWraper, ArticleWraper, Title, Location } from "./style";
 
 export default function LatesetArticles() {
   return (
@@ -33,9 +27,7 @@ export default function LatesetArticles() {
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </Title>
           <Location>
-            <Link href="">
-              <div>AAA → BBB</div>
-            </Link>
+            <div>AAA → BBB</div>
           </Location>
         </ArticleWraper>
         <ArticleWraper>
@@ -44,19 +36,7 @@ export default function LatesetArticles() {
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </Title>
           <Location>
-            <svg
-              src="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              fill="none"
-              viewBox="0 0 14 14"
-            >
-              <path
-                fill="#00CD67"
-                d="M7 1.167A4.08 4.08 0 002.917 5.25C2.917 8.313 7 12.833 7 12.833s4.083-4.52 4.083-7.583A4.08 4.08 0 007 1.167zm0 5.541a1.459 1.459 0 110-2.917 1.459 1.459 0 010 2.917z"
-              ></path>
-            </svg>
-            <StyledLink href="">AAA</StyledLink> {">"} <Link href="">BBB</Link>{" "}
+            <div>AAA → BBB</div>
           </Location>
         </ArticleWraper>
         <ArticleWraper>
@@ -65,9 +45,7 @@ export default function LatesetArticles() {
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </Title>
           <Location>
-            <Link href="">
-              <div>AAA → BBB</div>
-            </Link>
+            <div>AAA → BBB</div>
           </Location>
         </ArticleWraper>
         <ArticleWraper>
@@ -76,9 +54,7 @@ export default function LatesetArticles() {
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </Title>
           <Location>
-            <Link href="">
-              <div>AAA → BBB</div>
-            </Link>
+            <div>AAA → BBB</div>
           </Location>
         </ArticleWraper>
         <ArticleWraper>
@@ -87,9 +63,7 @@ export default function LatesetArticles() {
             記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル記事のタイトル
           </Title>
           <Location>
-            <Link href="">
-              <div>AAA → BBB</div>
-            </Link>
+            <div>AAA → BBB</div>
           </Location>
         </ArticleWraper>
       </ArticlesWraper>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wraper = styled.div`
   position: relative;
-  &:active {
+  &:touch-action {
     &::before {
       content: "";
       position: absolute;
