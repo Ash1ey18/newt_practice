@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
@@ -16,6 +17,7 @@ export const ArticleWraper = styled.div`
     "img location" 1fr
     /128px 1fr;
   column-gap: 16px;
+  align-items: center;
 
   > div:nth-child(1) {
     border-radius: 5px;
@@ -34,16 +36,14 @@ export const Title = styled.h1`
 `;
 
 export const Location = styled.div`
-  height: 18px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  gap: 2px;
+  height: 14px;
+  font-size: 14px;
+  margin-top: 6px;
   grid-area: location;
-  & a {
-    color: #00cd67;
-    &:hover {
-      opacity: 0.6;
-    }
+`;
+
+export const StyledLink = styled(Link)`
+  a:hover {
+    opacity: 0.6;
   }
 `;

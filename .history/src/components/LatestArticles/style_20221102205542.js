@@ -16,6 +16,7 @@ export const ArticleWraper = styled.div`
     "img location" 1fr
     /128px 1fr;
   column-gap: 16px;
+  /* align-items: center; */
 
   > div:nth-child(1) {
     border-radius: 5px;
@@ -35,15 +36,13 @@ export const Title = styled.h1`
 
 export const Location = styled.div`
   height: 18px;
-  font-size: 12px;
+  font-size: 14px;
+  margin-top: 6px;
   display: flex;
   align-items: center;
   gap: 2px;
   grid-area: location;
   & a {
     color: #00cd67;
-    &:hover {
-      opacity: 0.6;
-    }
   }
 `;

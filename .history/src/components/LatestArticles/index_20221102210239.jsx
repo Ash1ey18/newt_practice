@@ -33,7 +33,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイ・グアム</a>
+              <a>AAA</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function LatesetArticles() {
               ></path>
             </svg>
             <Link href="">
-              <a>グアム</a>
+              <a>BBB</a>
             </Link>
           </Location>
         </ArticleWraper>
@@ -72,7 +72,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイ・グアム</a>
+              <a>AAA</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ export default function LatesetArticles() {
               ></path>
             </svg>
             <Link href="">
-              <a>グアム</a>
+              <a>BBB</a>
             </Link>
           </Location>
         </ArticleWraper>
@@ -111,7 +111,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイ・グアム</a>
+              <a>AAA</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function LatesetArticles() {
               ></path>
             </svg>
             <Link href="">
-              <a>グアム</a>
+              <a>BBB</a>
             </Link>
           </Location>
         </ArticleWraper>
@@ -150,7 +150,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>グアム</a>
+              <a>AAA</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ export default function LatesetArticles() {
               ></path>
             </svg>
             <Link href="">
-              <a>グアム</a>
+              <a>BBB</a>
             </Link>
           </Location>
         </ArticleWraper>
@@ -189,7 +189,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイグアム</a>
+              <a>AAA</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +204,7 @@ export default function LatesetArticles() {
               ></path>
             </svg>
             <Link href="">
-              <a>グアム</a>
+              <a>BBB</a>
             </Link>
           </Location>
         </ArticleWraper>
@@ -228,7 +228,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイ・グアム</a>
+              <a>AAA</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@ export default function LatesetArticles() {
               ></path>
             </svg>
             <Link href="">
-              <a>グアム</a>
+              <a>BBB</a>
             </Link>
           </Location>
         </ArticleWraper>

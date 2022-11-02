@@ -16,6 +16,7 @@ export const ArticleWraper = styled.div`
     "img location" 1fr
     /128px 1fr;
   column-gap: 16px;
+  /* align-items: center; */
 
   > div:nth-child(1) {
     border-radius: 5px;
