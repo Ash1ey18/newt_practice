@@ -1,16 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import { ArticlesWraper, ArticleWraper, Title } from "./style";
-import SectionWraper from "src/components/SectionWraper";
+import { SectionWraper, ArticlesWraper, ArticleWraper, Title } from "./style";
 import ArticleImg from "src/components/ArticleImg";
 
 export default function RecomArticles() {
   return (
-    <SectionWraper where={"recomArti"}>
+    <SectionWraper>
       <h2>おすすめの記事</h2>
       <ArticlesWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="04" alt="heiyo" />
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -18,7 +17,7 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="05" alt="heiyo" />
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -26,7 +25,7 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="06" alt="heiyo" />
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -34,7 +33,7 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="07" alt="heiyo" />
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -42,7 +41,7 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="08" alt="heiyo" />
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -50,7 +49,15 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="09" alt="heiyo" />
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
+          <div>
+            <Title>
+              <Link href="">ここにタイトル</Link>
+            </Title>
+          </div>
+        </ArticleWraper>
+        <ArticleWraper>
+          <ArticleImg src="/img/img04.jpg" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>

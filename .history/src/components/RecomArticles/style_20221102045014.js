@@ -25,6 +25,18 @@ export const ArticleWraper = styled.div`
   overflow: hidden;
 `;
 
+export const ImageWraper = styled.div`
+  position: relative;
+  > span {
+    position: unset !important;
+  }
+  & img {
+    position: relative !important;
+    width: 100% !important;
+    height: unset !important;
+  }
+`;
+
 export const Title = styled.h2`
   font-size: 12px;
   margin: 0;

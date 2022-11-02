@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   RcmContainer,
+  ImageContainer,
   TopArticleWraper,
   ArticleTitle,
   LocationKwdWraper,
@@ -10,12 +12,19 @@ import {
   PubTime,
   Author,
 } from "./styled.js";
-import ArticleImg from "src/components/ArticleImg";
 
 export default function Reccomend() {
   return (
     <RcmContainer>
-      <ArticleImg srcNo="02" alt="ships" />
+      <ImageContainer>
+        <Image
+          src="/img/img02.jpg"
+          alt="there are many ships on the river."
+          layout="fill"
+          objectFit="contain"
+          priority
+        />
+      </ImageContainer>
       <TopArticleWraper>
         <LocationKwdWraper>香港 → 台湾</LocationKwdWraper>
         <ArticleTitle>

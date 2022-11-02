@@ -6,7 +6,7 @@ import ArticleImg from "src/components/ArticleImg";
 
 export default function RecomArticles() {
   return (
-    <SectionWraper where={"recomArti"}>
+    <SectionWraper recomArti>
       <h2>おすすめの記事</h2>
       <ArticlesWraper>
         <ArticleWraper>

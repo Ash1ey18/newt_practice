@@ -4,6 +4,7 @@ import Image from "next/Image";
 export const RcmContainer = styled.section`
   width: 100%;
 `;
+
 export const TopArticleWraper = styled.div`
   background-color: #e4f8ea;
   width: 100%;

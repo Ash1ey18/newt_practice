@@ -1,12 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { ArticlesWraper, ArticleWraper, Title } from "./style";
-import SectionWraper from "src/components/SectionWraper";
-import ArticleImg from "src/components/ArticleImg";
+import { SectionWraper, ArticlesWraper, ArticleWraper, Title } from "./style";
+import ArticleImg from "srcNo/components/ArticleImg";
 
 export default function RecomArticles() {
   return (
-    <SectionWraper where={"recomArti"}>
+    <SectionWraper>
       <h2>おすすめの記事</h2>
       <ArticlesWraper>
         <ArticleWraper>

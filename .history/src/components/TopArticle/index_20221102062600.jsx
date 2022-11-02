@@ -15,7 +15,7 @@ import ArticleImg from "src/components/ArticleImg";
 export default function Reccomend() {
   return (
     <RcmContainer>
-      <ArticleImg srcNo="02" alt="ships" />
+      <ArticleImg srcNo="02" alt="ships" priority />
       <TopArticleWraper>
         <LocationKwdWraper>香港 → 台湾</LocationKwdWraper>
         <ArticleTitle>

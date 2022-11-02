@@ -1,16 +1,20 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { ArticlesWraper, ArticleWraper, Title } from "./style";
-import SectionWraper from "src/components/SectionWraper";
-import ArticleImg from "src/components/ArticleImg";
+import {
+  SectionWraper,
+  ArticlesWraper,
+  ArticleWraper,
+  ImageWraper,
+  Title,
+} from "./style";
 
 export default function RecomArticles() {
   return (
-    <SectionWraper where={"recomArti"}>
+    <SectionWraper>
       <h2>おすすめの記事</h2>
       <ArticlesWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="04" alt="heiyo" />
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -18,7 +22,14 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="05" alt="heiyo" />
+          <ImageWraper>
+            <Image
+              src="/img/img04.jpg"
+              alt="heiyoo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </ImageWraper>
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -26,7 +37,14 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="06" alt="heiyo" />
+          <ImageWraper>
+            <Image
+              src="/img/img06.jpg"
+              alt="heiyoo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </ImageWraper>
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -34,7 +52,14 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="07" alt="heiyo" />
+          <ImageWraper>
+            <Image
+              src="/img/img07.jpg"
+              alt="heiyoo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </ImageWraper>
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -42,7 +67,14 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="08" alt="heiyo" />
+          <ImageWraper>
+            <Image
+              src="/img/img08.jpg"
+              alt="heiyoo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </ImageWraper>
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
@@ -50,7 +82,14 @@ export default function RecomArticles() {
           </div>
         </ArticleWraper>
         <ArticleWraper>
-          <ArticleImg srcNo="09" alt="heiyo" />
+          <ImageWraper>
+            <Image
+              src="/img/img09.jpg"
+              alt="heiyoo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </ImageWraper>
           <div>
             <Title>
               <Link href="">ここにタイトル</Link>
