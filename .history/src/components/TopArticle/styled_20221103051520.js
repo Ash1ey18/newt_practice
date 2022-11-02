@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/Image";
 
 export const RcmContainer = styled.section`
   width: 100%;

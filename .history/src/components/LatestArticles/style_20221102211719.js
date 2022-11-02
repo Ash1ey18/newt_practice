@@ -50,16 +50,12 @@ export const Location = styled.div`
 
 export const BtnDiv = styled.div`
   height: 48px;
-  border: 1px solid #1f1f1f;
+  border: 1px solid black;
   border-radius: 30px;
-  margin: 30px 24px 0 24px;
-  cursor: pointer;
   font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:hover {
-    opacity: 0.6;
+  margin: 30px 24px 0 24px;
+  text-align: center;
+  a {
+    margin: 10px 0;
   }
 `;

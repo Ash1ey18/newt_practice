@@ -10,7 +10,7 @@ export default function ArticleImg({ srcNo, alt, priority }) {
         alt={alt}
         layout="fill"
         objectFit="contain"
-        priority={priority ? "ture" : undefined}
+        priority={priority ? "" : undefined}
       />
     </Wraper>
   );

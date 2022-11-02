@@ -255,11 +255,9 @@ export default function LatesetArticles() {
         </ArticleWraper>
       </ArticlesWraper>
       <BtnDiv>
-        <p>
-          <Link href="">
-            <a>もっとみる</a>
-          </Link>
-        </p>
+        <Link href="">
+          <a>a</a>
+        </Link>
       </BtnDiv>
     </SectionWraper>
   );

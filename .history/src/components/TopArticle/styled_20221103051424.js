@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/Image";
 
 export const RcmContainer = styled.section`
   width: 100%;
@@ -30,6 +31,7 @@ export const ArticleInfo = styled.div`
     grid-area: areaA;
   }
 `;
+export const IconImage = styled(Image)``;
 
 export const PubTime = styled.time`
   font-size: 12px;

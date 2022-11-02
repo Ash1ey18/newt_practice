@@ -53,7 +53,6 @@ export const BtnDiv = styled.div`
   border: 1px solid #1f1f1f;
   border-radius: 30px;
   margin: 30px 24px 0 24px;
-  cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   display: flex;
