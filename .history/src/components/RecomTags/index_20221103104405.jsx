@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import StyledLink from "next/StyledLink";
 
 import SectionWrapper from "src/components/SectionWrapper";
 import { TagsWrapperDiv, StyledUl, StyledLi } from "./style";
@@ -11,7 +11,7 @@ export default function RecomTags() {
       <TagsWrapperDiv>
         <StyledUl>
           <StyledLi>
-            <Link href="">#ドバイ 観光</Link>
+            <StyledLink href="">#ドバイ 観光</StyledLink>
           </StyledLi>
           <StyledLi>#イタリア 観光</StyledLi>
           <StyledLi>#カナダ 観光</StyledLi>
