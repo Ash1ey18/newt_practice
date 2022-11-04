@@ -18,7 +18,6 @@ export default function Home() {
       <FeatureAreas />
       <RecomTags />
       <IntroApp />
-      <FollowUs />
     </>
   );
 }

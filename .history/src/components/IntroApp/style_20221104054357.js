@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Styledaside = styled.aside`
-  border-top: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
 `;
 

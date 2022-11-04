@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Styledaside = styled.aside`
-  border-top: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
 `;
 
@@ -14,6 +14,7 @@ export const StyledSpan = styled.span`
   white-space: pre-wrap;
   margin: 0;
   font-weight: 600;
+  font-size: 20px;
 `;
 export const ImgWrapper = styled.div`
   margin-top: 20px;
