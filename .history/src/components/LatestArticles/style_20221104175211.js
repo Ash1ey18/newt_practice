@@ -34,7 +34,6 @@ export const Title = styled.h1`
 `;
 
 export const Location = styled.div`
-  margin-top: 8px;
   height: 18px;
   font-size: 12px;
   display: flex;

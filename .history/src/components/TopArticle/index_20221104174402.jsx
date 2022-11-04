@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +9,6 @@ import {
   ArticleInfo,
   PubTime,
   Author,
-  Location,
 } from "./styled.js";
 import ArticleImg from "src/components/ArticleImg";
 
@@ -34,7 +32,7 @@ export default function Reccomend() {
           </svg>
 
           <Link href="">
-            <a>アジア</a>
+            <a>ハワイ・グアム</a>
           </Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,12 +47,12 @@ export default function Reccomend() {
             ></path>
           </svg>
           <Link href="">
-            <a>台湾</a>
+            <a>グアム</a>
           </Link>
         </Location>
         <ArticleTitle>
           <Link href="#">
-            <a>台湾・高雄の観光スポットは？人気から穴場まで最新ランキング</a>
+            台湾・高雄の観光スポットは？人気から穴場まで最新ランキング
           </Link>
         </ArticleTitle>
         <ArticleInfo>

@@ -12,7 +12,7 @@ export const ArticleWraper = styled.div`
   border-bottom: 1px solid rgb(238, 238, 238);
   display: grid;
   grid-template:
-    "img title"
+    "img title" 1fr
     "img location" 1fr
     /128px 1fr;
   column-gap: 16px;
@@ -28,13 +28,12 @@ export const Title = styled.h1`
   font-size: 12px;
   margin: 0;
   grid-area: title;
-  & a:hover {
+  :hover {
     opacity: 0.6;
   }
 `;
 
 export const Location = styled.div`
-  margin-top: 8px;
   height: 18px;
   font-size: 12px;
   display: flex;

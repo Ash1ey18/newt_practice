@@ -92,7 +92,7 @@ export default function Footer() {
       </nav>
       <SnsListdiv>
         <div className="imgwrapper">
-          <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
+          <Link href="">
             <a>
               <Image
                 src="/img/twitterlogo2.svg"
@@ -104,7 +104,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="imgwrapper">
-          <Link href="https://www.instagram.com/newt.travel/?hl=ja&openExternalBrowser=1">
+          <Link href="">
             <a>
               <Image
                 src="/img/instagramlogo2.svg"
@@ -114,42 +114,36 @@ export default function Footer() {
               />
             </a>
           </Link>
+          <Image
+            src="/img/instagramlogo2.svg"
+            alt="instagramIcon"
+            width={40}
+            height={40}
+          />
         </div>
         <div className="imgwrapper">
-          <Link href="https://www.tiktok.com/@newt_travel?openExternalBrowser=1">
-            <a>
-              <Image
-                src="/img/tiktoklogo2.svg"
-                alt="tiktokIcon"
-                width={40}
-                height={40}
-              />
-            </a>
-          </Link>
+          <Image
+            src="/img/tiktoklogo2.svg"
+            alt="tiktokIcon"
+            width={40}
+            height={40}
+          />
         </div>
         <div className="imgwrapper">
-          <Link href="https://page.line.me/847pjqcp?openQrModal=true">
-            <a>
-              <Image
-                src="/img/linelogo2.svg"
-                alt="lineIcon"
-                width={40}
-                height={40}
-              />
-            </a>
-          </Link>
+          <Image
+            src="/img/linelogo2.svg"
+            alt="lineIcon"
+            width={40}
+            height={40}
+          />
         </div>
         <div className="imgwrapper">
-          <Link href="https://www.youtube.com/channel/UCdM6a4_8TQCR03ShAGU8CyQ">
-            <a>
-              <Image
-                src="/img/youtubelogo2.svg"
-                alt="youtubeIcon"
-                width={40}
-                height={40}
-              />
-            </a>
-          </Link>
+          <Image
+            src="/img/youtubelogo2.svg"
+            alt="youtubeIcon"
+            width={40}
+            height={40}
+          />
         </div>
       </SnsListdiv>
       <LowerAreadiv>

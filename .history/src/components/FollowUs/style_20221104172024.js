@@ -24,7 +24,7 @@ export const SnsListul = styled.ul`
   display: flex;
   justify-content: center;
   gap: 24px;
-  & a:hover {
+  &:hover {
     opacity: 0.6;
   }
 `;

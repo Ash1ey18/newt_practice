@@ -2,16 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Styledaside, Styledh1, Styledp, SnsListul } from "./style";
+import { Styledaside, Styledh1, Styledp, SnsListUl } from "./style";
 
 export default function FollowUs() {
   return (
     <Styledaside>
       <Styledh1>Follow Us</Styledh1>
       <Styledp>
-        {` 最新の渡航ニュースやおすすめスポットなど、\n海外旅行の情報をお届けします✈️`}
+        {` 最新の渡航ニュースやおすすめスポットなど、\n海外旅行の情報をお届けします&#x2708`}
+        Unicodeでは絵文字を使うことが出来ます😀
       </Styledp>
-      <SnsListul>
+      <SnsListUl>
         <li>
           <Link href="https://page.line.me/847pjqcp?openQrModal=true">
             <a target="_blank" rel="noopener noreferrer">
@@ -72,7 +73,7 @@ export default function FollowUs() {
             </a>
           </Link>
         </li>
-      </SnsListul>
+      </SnsListUl>
     </Styledaside>
   );
 }

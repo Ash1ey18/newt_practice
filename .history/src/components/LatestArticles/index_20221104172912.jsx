@@ -211,7 +211,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイ・グアム</a>
+              <a>ハワイグアム</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"

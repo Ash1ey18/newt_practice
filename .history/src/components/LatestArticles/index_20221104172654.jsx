@@ -20,8 +20,8 @@ export default function LatesetArticles() {
         <ArticleWraper>
           <ArticleImg srcNo="10" alt="heiyoo" />
           <Title>
-            <Link href="">
-              <a>フランス・パリのおすすめホテル10選！</a>
+            <Link href="/">
+              <a>フランス・パリのおすすめホテル10選！</a>{" "}
             </Link>
           </Title>
           <Location>
@@ -61,7 +61,7 @@ export default function LatesetArticles() {
         <ArticleWraper>
           <ArticleImg srcNo="11" alt="heiyoo" />
           <Title>
-            <Link href="">
+            <Link href="/">
               <a>
                 【2022年最新】初めてのグアム旅行！費用やおすすめの安い時期を完全ガイド
               </a>
@@ -104,11 +104,7 @@ export default function LatesetArticles() {
         <ArticleWraper>
           <ArticleImg srcNo="12" alt="heiyoo" />
           <Title>
-            <Link href="">
-              <a>
-                ハワイで人気のグルメ20選！ランキング形式で定番の食べ物やローカルフードまで紹介
-              </a>
-            </Link>
+            ハワイで人気のグルメ20選！ランキング形式で定番の食べ物やローカルフードまで紹介
           </Title>
           <Location>
             <svg
@@ -147,11 +143,7 @@ export default function LatesetArticles() {
         <ArticleWraper>
           <ArticleImg srcNo="13" alt="heiyoo" />
           <Title>
-            <Link href="">
-              <a>
-                【2022年10月最新】韓国、入国後のPCR検査義務が廃止！渡航情報・入国手続き・規制について解説
-              </a>
-            </Link>
+            【2022年10月最新】韓国、入国後のPCR検査義務が廃止！渡航情報・入国手続き・規制について解説
           </Title>
           <Location>
             <svg
@@ -190,11 +182,7 @@ export default function LatesetArticles() {
         <ArticleWraper>
           <ArticleImg srcNo="14" alt="heiyoo" />
           <Title>
-            <Link href="">
-              <a>
-                バンコクの買い物スポット12選！おすすめのショッピングモールから安いお店まで
-              </a>
-            </Link>
+            バンコクの買い物スポット12選！おすすめのショッピングモールから安いお店まで
           </Title>
           <Location>
             <svg
@@ -211,7 +199,7 @@ export default function LatesetArticles() {
             </svg>
 
             <Link href="">
-              <a>ハワイ・グアム</a>
+              <a>ハワイグアム</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -233,11 +221,7 @@ export default function LatesetArticles() {
         <ArticleWraper>
           <ArticleImg srcNo="02" alt="heiyoo" />
           <Title>
-            <Link href="">
-              <a>
-                【2022年最新】ドイツ旅行1週間の費用・予算は？安い時期や物価も紹介
-              </a>
-            </Link>
+            【2022年最新】ドイツ旅行1週間の費用・予算は？安い時期や物価も紹介
           </Title>
           <Location>
             <svg

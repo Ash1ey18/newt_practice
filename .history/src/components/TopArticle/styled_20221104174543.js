@@ -15,9 +15,6 @@ export const ArticleTitle = styled.h1`
   font-size: 18px;
   margin-top: 8px;
   margin-bottom: 0;
-  & a:hover {
-    opacity: 0.6;
-  }
 `;
 
 export const ArticleInfo = styled.div`

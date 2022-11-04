@@ -38,7 +38,7 @@ export const SnsListdiv = styled.div`
   display: flex;
   justify-content: left;
   column-gap: 16px;
-  > div {
+  & img {
     &:hover {
       opacity: 0.6;
     }

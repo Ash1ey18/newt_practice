@@ -12,8 +12,8 @@ export const ArticleWraper = styled.div`
   border-bottom: 1px solid rgb(238, 238, 238);
   display: grid;
   grid-template:
-    "img title"
-    "img location" 1fr
+    "img title" 1fr
+    "img location" 18px
     /128px 1fr;
   column-gap: 16px;
 
@@ -34,7 +34,6 @@ export const Title = styled.h1`
 `;
 
 export const Location = styled.div`
-  margin-top: 8px;
   height: 18px;
   font-size: 12px;
   display: flex;

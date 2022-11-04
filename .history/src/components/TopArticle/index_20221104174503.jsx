@@ -54,7 +54,7 @@ export default function Reccomend() {
         </Location>
         <ArticleTitle>
           <Link href="#">
-            <a>台湾・高雄の観光スポットは？人気から穴場まで最新ランキング</a>
+            台湾・高雄の観光スポットは？人気から穴場まで最新ランキング
           </Link>
         </ArticleTitle>
         <ArticleInfo>

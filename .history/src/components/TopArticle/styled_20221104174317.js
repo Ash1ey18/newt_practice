@@ -15,9 +15,6 @@ export const ArticleTitle = styled.h1`
   font-size: 18px;
   margin-top: 8px;
   margin-bottom: 0;
-  & a:hover {
-    opacity: 0.6;
-  }
 `;
 
 export const ArticleInfo = styled.div`
@@ -47,7 +44,7 @@ export const Author = styled.div`
 
 export const Location = styled.div`
   height: 18px;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   gap: 2px;

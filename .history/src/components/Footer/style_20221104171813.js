@@ -38,11 +38,6 @@ export const SnsListdiv = styled.div`
   display: flex;
   justify-content: left;
   column-gap: 16px;
-  > div {
-    &:hover {
-      opacity: 0.6;
-    }
-  }
 `;
 export const LowerAreadiv = styled.div`
   opacity: 0.7;

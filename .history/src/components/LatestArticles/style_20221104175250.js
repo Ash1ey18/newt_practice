@@ -34,8 +34,7 @@ export const Title = styled.h1`
 `;
 
 export const Location = styled.div`
-  margin-top: 8px;
-  height: 18px;
+  height: 180px;
   font-size: 12px;
   display: flex;
   align-items: center;
