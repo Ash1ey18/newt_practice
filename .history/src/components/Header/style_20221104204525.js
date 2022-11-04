@@ -8,9 +8,7 @@ export const Container = styled.div`
   @media only screen and (min-width: 600px) {
     padding-left: 48px;
     padding-right: 56px;
-    height: 80px;
     justify-content: space-between;
-    box-shadow: 1px 6px 11px -6px rgba(0, 0, 0, 0.6);
   }
 `;
 
