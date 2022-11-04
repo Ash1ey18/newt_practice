@@ -20,7 +20,7 @@ export default function Home() {
       <RecomTags />
       <IntroApp />
       <FollowUs />
-      <Footer />
+      <Footer Footer />
     </>
   );
 }
