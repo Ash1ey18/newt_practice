@@ -11,7 +11,7 @@ export default function FeatureAreass() {
       <h2>注目のエリア</h2>
       <StyledUl>
         <StyledLi>
-          <Link href="#">
+          <Link href="/">
             <StyledImage
               src="/img/img15.jpg"
               alt="Hawaii"
