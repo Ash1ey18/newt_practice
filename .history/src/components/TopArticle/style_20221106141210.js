@@ -14,12 +14,13 @@ export const RcmContainer = styled.section`
       #e4f8ea 0,
       #e4f8ea
     );
+    /* box-shadow: 3px 2px 11px -6px rgb(0 0 0 / 60%); */
   }
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
+  height: 568px;
   @media only screen and (min-width: 640px) {
-    height: 568px;
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;

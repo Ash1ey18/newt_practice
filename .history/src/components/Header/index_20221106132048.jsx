@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 import Image from "next/image";
 import Link from "next/link.js";
-import { Container, HeaderSnsListul, SnsListli } from "./style";
+import { HeaderSnsListul, Container } from "./style";
 
 export default function Header() {
   const [hydrated, setHydrated] = useState(false);
@@ -18,10 +18,10 @@ export default function Header() {
   }, []);
   return (
     <Container>
-      <Image src="/img/newtlogo1.svg" alt="newt" width={144} height={27} />
+      <Image src="/img/newtlogo1.svg" alt="newt" width={140} height={27} />
       {isTablet && (
         <HeaderSnsListul>
-          <SnsListli>
+          <li>
             <Link href="https://page.line.me/847pjqcp?openQrModal=true">
               <a target="_blank" rel="noopener noreferrer">
                 <Image
@@ -32,8 +32,8 @@ export default function Header() {
                 />
               </a>
             </Link>
-          </SnsListli>
-          <SnsListli>
+          </li>
+          <li>
             <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
               <a target="_blank" rel="noopener noreferrer">
                 <Image
@@ -44,8 +44,8 @@ export default function Header() {
                 />
               </a>
             </Link>
-          </SnsListli>
-          <SnsListli>
+          </li>
+          <li>
             <Link href="https://www.instagram.com/newt.travel/?hl=ja&openExternalBrowser=1">
               <a target="_blank" rel="noopener noreferrer">
                 <Image
@@ -56,8 +56,8 @@ export default function Header() {
                 />
               </a>
             </Link>
-          </SnsListli>
-          <SnsListli>
+          </li>
+          <li>
             <Link href="https://www.tiktok.com/@newt_travel?openExternalBrowser=1">
               <a target="_blank" rel="noopener noreferrer">
                 <Image
@@ -68,8 +68,8 @@ export default function Header() {
                 />
               </a>
             </Link>
-          </SnsListli>
-          <SnsListli>
+          </li>
+          <li>
             <Link href="https://www.youtube.com/channel/UCdM6a4_8TQCR03ShAGU8CyQ">
               <a target="_blank" rel="noopener noreferrer">
                 <Image
@@ -80,7 +80,7 @@ export default function Header() {
                 />
               </a>
             </Link>
-          </SnsListli>
+          </li>
         </HeaderSnsListul>
       )}
     </Container>

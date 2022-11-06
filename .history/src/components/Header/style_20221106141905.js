@@ -6,11 +6,12 @@ export const Container = styled.div`
   align-items: center;
   height: 56px;
   @media only screen and (min-width: 640px) {
+    position: relative;
     padding-left: 48px;
     padding-right: 56px;
     height: 80px;
     justify-content: space-between;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+    box-shadow: 0 2px 4px rgsb(0 0 0 / 5%);
   }
 `;
 

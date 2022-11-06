@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
   return (
     <Container>
-      <Image src="/img/newtlogo1.svg" alt="newt" width={144} height={27} />
+      <Image src="/img/newtlogo1.svg" alt="newt" width={140} height={27} />
       {isTablet && (
         <HeaderSnsListul>
           <SnsListli>

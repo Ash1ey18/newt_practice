@@ -18,8 +18,8 @@ export const RcmContainer = styled.section`
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
+  height: 100%;
   @media only screen and (min-width: 640px) {
-    height: 568px;
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;
@@ -46,7 +46,7 @@ export const ImgWrapper = styled.div`
   > span {
     position: unset !important;
     @media only screen and (min-width: 640px) {
-      border-radius: 8px;
+      border-radius: 5px;
       overflow: hidden;
     }
   }
@@ -73,7 +73,6 @@ export const ArticleTitle = styled.h1`
     opacity: 0.6;
   }
   @media only screen and (min-width: 640px) {
-    letter-spacing: 0.05em;
     font-size: 28px;
     line-height: 48px;
   }
@@ -132,8 +131,7 @@ export const Location = styled.div`
     }
   }
   @media only screen and (min-width: 640px) {
+    margin-top: 16px;
     font-size: 16px;
-    height: 24px;
-    gap: 6px;
   }
 `;

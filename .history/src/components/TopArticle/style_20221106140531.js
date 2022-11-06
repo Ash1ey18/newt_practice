@@ -18,8 +18,8 @@ export const RcmContainer = styled.section`
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
+  height: 568px;
   @media only screen and (min-width: 640px) {
-    height: 568px;
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;
@@ -133,7 +133,6 @@ export const Location = styled.div`
   }
   @media only screen and (min-width: 640px) {
     font-size: 16px;
-    height: 24px;
-    gap: 6px;
+    line-height: 24px;
   }
 `;

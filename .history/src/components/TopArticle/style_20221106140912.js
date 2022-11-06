@@ -18,8 +18,8 @@ export const RcmContainer = styled.section`
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
+  height: 568px;
   @media only screen and (min-width: 640px) {
-    height: 568px;
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;
@@ -31,6 +31,9 @@ export const TopArticleWraper = styled.div`
 export const ImgWrapper = styled.div`
   position: relative;
   max-width: 640px;
+  @media only screen and (min-width: 640px) {
+    width: 144px;
+  }
   &:hover {
     &::before {
       content: "";

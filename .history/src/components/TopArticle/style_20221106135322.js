@@ -18,49 +18,20 @@ export const RcmContainer = styled.section`
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
+  height: 100%;
   @media only screen and (min-width: 640px) {
-    height: 568px;
     padding-top: 56px;
     padding-bottom: 60px;
-    display: grid;
-    grid-template-columns: 640fr 456fr;
+    display: flex;
+    justify-content: space-between;
     column-gap: 56px;
   }
 `;
-
-export const ImgWrapper = styled.div`
-  position: relative;
-  max-width: 640px;
-  &:hover {
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 100;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background-color: #ffff;
-      opacity: 0.4;
-    }
-  }
-  > span {
-    position: unset !important;
-    @media only screen and (min-width: 640px) {
-      border-radius: 8px;
-      overflow: hidden;
-    }
-  }
-  & img {
-    position: relative !important;
-    width: 100% !important;
-    height: unset !important;
-  }
-`;
-
 export const Contents = styled.div`
   width: 100%;
   padding: 16px 20px 20px;
   @media only screen and (min-width: 640px) {
+    width: auto;
     height: 100%;
     padding: 0;
   }
@@ -73,7 +44,6 @@ export const ArticleTitle = styled.h1`
     opacity: 0.6;
   }
   @media only screen and (min-width: 640px) {
-    letter-spacing: 0.05em;
     font-size: 28px;
     line-height: 48px;
   }
@@ -132,8 +102,39 @@ export const Location = styled.div`
     }
   }
   @media only screen and (min-width: 640px) {
+    margin-top: 16px;
     font-size: 16px;
-    height: 24px;
-    gap: 6px;
+  }
+`;
+
+export const ImgWrapper = styled.div`
+  position: relative;
+  min-width: 350px;
+  @media only screen and (min-width: 640px) {
+    width: 54%;
+  }
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: #ffff;
+      opacity: 0.4;
+    }
+  }
+  > span {
+    position: unset !important;
+    @media only screen and (min-width: 640px) {
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+  & img {
+    position: relative !important;
+    width: 100% !important;
+    height: unset !important;
   }
 `;

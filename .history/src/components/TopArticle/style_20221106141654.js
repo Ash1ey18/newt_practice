@@ -6,7 +6,7 @@ export const RcmContainer = styled.section`
   width: 100%;
   @media only screen and (min-width: 640px) {
     position: relative;
-    z-index: -100;
+    z-index: 100;
     background: linear-gradient(
       90deg,
       transparent,
@@ -18,8 +18,8 @@ export const RcmContainer = styled.section`
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
+  height: 568px;
   @media only screen and (min-width: 640px) {
-    height: 568px;
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;
