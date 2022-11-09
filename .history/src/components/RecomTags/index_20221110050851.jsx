@@ -69,6 +69,22 @@ export default function RecomTags() {
           <StyledLi>#シンガポール ホテル</StyledLi>
           <StyledLi>#シンガポール 観光</StyledLi>
           <StyledLi>#フィリピン 観光</StyledLi>
+          <StyledLi>#セブ 観光</StyledLi>
+          <StyledLi>#ニューヨーク 観光</StyledLi>
+          <StyledLi>#韓国 ホテル</StyledLi>
+
+          <StyledLi>#ハワイ 旅費</StyledLi>
+          <StyledLi>#ハワイ ホテル</StyledLi>
+          <StyledLi>#ハワイ グルメ</StyledLi>
+          <StyledLi>#ハワイ 観光</StyledLi>
+          <StyledLi>#イタリア 観光</StyledLi>
+          <StyledLi>#カナダ 観光</StyledLi>
+          <StyledLi>#トルコ 観光</StyledLi>
+          <StyledLi>#シンガポール ホテル</StyledLi>
+          <StyledLi>#シンガポール 観光</StyledLi>
+          <StyledLi>#フィリピン 観光</StyledLi>
+          <StyledLi>#セブ 観光</StyledLi>
+          <StyledLi>#ニューヨーク 観光</StyledLi
         </StyledUl>
       </TagsWrapperDiv>
     </SectionWrapper>

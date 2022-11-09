@@ -8,7 +8,7 @@ export const TagsWrapperDiv = styled.div`
   border-radius: 5px;
 
   @media only screen and (min-width: 640px) {
-    margin: 32px 0 0 0;
+    margin: 16px 0 0 0;
   }
 `;
 export const StyledUl = styled.ul`
@@ -17,9 +17,6 @@ export const StyledUl = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 10px 10px;
-  @media only screen and (min-width: 640px) {
-    gap: 8px 16px;
-  }
 `;
 export const StyledLi = styled.li`
   font-size: 14px;
