@@ -9,7 +9,7 @@ export const StyledUl = styled.ul`
   @media only screen and (min-width: 640px) {
     margin: 48px 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
     gap: 24px;
   }
 `;
@@ -43,11 +43,6 @@ export const StyledDiv = styled.div`
     left: 50%;
     z-index: 200;
     transform: translate(-50%, -50%);
-    @media only screen and (min-width: 640px) {
-      min-width: 145px;
-      font-size: 18px;
-      font-weight: 600;
-    }
   }
   &:hover {
     &::before {

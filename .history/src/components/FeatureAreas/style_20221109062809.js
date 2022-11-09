@@ -39,12 +39,11 @@ export const StyledDiv = styled.div`
     text-align: center;
     color: white;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     z-index: 200;
     transform: translate(-50%, -50%);
     @media only screen and (min-width: 640px) {
-      min-width: 145px;
       font-size: 18px;
       font-weight: 600;
     }

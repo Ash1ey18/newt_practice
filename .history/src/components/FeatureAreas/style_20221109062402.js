@@ -9,8 +9,12 @@ export const StyledUl = styled.ul`
   @media only screen and (min-width: 640px) {
     margin: 48px 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    grid-template:
+      "area area area" 1fr
+      "area area area" 1fr
+      "area area area" 1fr
+      "area area area" 1fr
+      /1fr 1fr 1fr;
   }
 `;
 export const StyledLi = styled.li`
@@ -43,11 +47,6 @@ export const StyledDiv = styled.div`
     left: 50%;
     z-index: 200;
     transform: translate(-50%, -50%);
-    @media only screen and (min-width: 640px) {
-      min-width: 145px;
-      font-size: 18px;
-      font-weight: 600;
-    }
   }
   &:hover {
     &::before {

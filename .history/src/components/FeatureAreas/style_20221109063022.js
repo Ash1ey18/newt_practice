@@ -44,7 +44,7 @@ export const StyledDiv = styled.div`
     z-index: 200;
     transform: translate(-50%, -50%);
     @media only screen and (min-width: 640px) {
-      min-width: 145px;
+      min-width: 120px;
       font-size: 18px;
       font-weight: 600;
     }
