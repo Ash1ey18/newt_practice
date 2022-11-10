@@ -6,10 +6,10 @@ export const MediaQueryContext = createContext();
 
 export function MediaQueryProvider({ children }) {
   const [hydrated, setHydrated] = useState(false);
-  const isTablet = useMediaQuery(
-    { query: `(min-width: ${TabletWidth})` },
-    hydrated ? undefined : { deviceWidth: 1600 }
-  );
+  // const isTablet = useMediaQuery(
+  //   { query: `(min-width: ${TabletWidth})` },
+  //   hydrated ? undefined : { deviceWidth: 1600 }
+  // );
   useEffect(() => {
     setHydrated(true);
   }, []);
