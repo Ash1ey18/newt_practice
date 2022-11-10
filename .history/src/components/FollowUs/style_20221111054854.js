@@ -17,17 +17,11 @@ export const Styledaside = styled.aside`
   }
 `;
 export const Styledh1 = styled.h1`
-  color: #1f1f1f;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.3em;
   line-height: 32px;
   margin: 0;
-  @media only screen and (min-width: ${TabletWidth}) {
-    grid-area: title;
-    letter-spacing: 0.1em;
-    line-height: 40px;
-  }
 `;
 export const Styledp = styled.p`
   font-size: 14px;
@@ -36,10 +30,7 @@ export const Styledp = styled.p`
   letter-spacing: 1.5px;
   line-height: 28px;
   @media only screen and (min-width: ${TabletWidth}) {
-    grid-area: description;
-    margin: 11px 0 0 0;
-    font-size: 16px;
-    letter-spacing: 0;
+    text-indent: 0;
   }
 `;
 

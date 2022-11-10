@@ -17,7 +17,6 @@ export const Styledaside = styled.aside`
   }
 `;
 export const Styledh1 = styled.h1`
-  color: #1f1f1f;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.3em;
@@ -39,7 +38,6 @@ export const Styledp = styled.p`
     grid-area: description;
     margin: 11px 0 0 0;
     font-size: 16px;
-    letter-spacing: 0;
   }
 `;
 

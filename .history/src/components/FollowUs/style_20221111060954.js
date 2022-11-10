@@ -18,6 +18,7 @@ export const Styledaside = styled.aside`
 `;
 export const Styledh1 = styled.h1`
   color: #1f1f1f;
+
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.3em;

@@ -11,7 +11,7 @@ export default function FollowUs() {
     <Styledaside>
       <Styledh1>Follow Us</Styledh1>
       <Styledp>
-        最新の渡航ニュースやおすすめスポットなど、{isTablet || `\n`}
+        最新の渡航ニュースやおすすめスポットなど、
         海外旅行の情報をお届けします✈️
       </Styledp>
       <SnsListul>

@@ -11,8 +11,7 @@ export default function FollowUs() {
     <Styledaside>
       <Styledh1>Follow Us</Styledh1>
       <Styledp>
-        最新の渡航ニュースやおすすめスポットなど、{isTablet || `\n`}
-        海外旅行の情報をお届けします✈️
+        {` 最新の渡航ニュースやおすすめスポットなど、\n海外旅行の情報をお届けします✈️`}
       </Styledp>
       <SnsListul>
         <li>
@@ -33,8 +32,8 @@ export default function FollowUs() {
               <Image
                 src="/img/twitterlogo.svg"
                 alt="Twitterリンク"
-                width={isTablet ? 48 : 40}
-                height={isTablet ? 48 : 40}
+                width={40}
+                height={40}
               />
             </a>
           </Link>
@@ -45,8 +44,8 @@ export default function FollowUs() {
               <Image
                 src="/img/instagramlogo.svg"
                 alt="instagramリンク"
-                width={isTablet ? 48 : 40}
-                height={isTablet ? 48 : 40}
+                width={40}
+                height={40}
               />
             </a>
           </Link>
@@ -57,8 +56,8 @@ export default function FollowUs() {
               <Image
                 src="/img/tiktoklogo.svg"
                 alt="TikTokリンク"
-                width={isTablet ? 48 : 40}
-                height={isTablet ? 48 : 40}
+                width={40}
+                height={40}
               />
             </a>
           </Link>
@@ -69,8 +68,8 @@ export default function FollowUs() {
               <Image
                 src="/img/youtubelogo.svg"
                 alt="Youtubeリンク"
-                width={isTablet ? 48 : 40}
-                height={isTablet ? 48 : 40}
+                width={40}
+                height={40}
               />
             </a>
           </Link>
