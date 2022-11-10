@@ -4,15 +4,14 @@ export const Styledaside = styled.aside`
   border-top: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
   @media only screen and (min-width: 640px) {
-    padding: 0;
     display: grid;
     grid-template:
       "img areaA" 1fr
       "img areaB" 130px
       / auto 350px;
     justify-content: space-between;
-    & > span {
-      margin: 14px 0 16px !important;
+    & span {
+      padding: 14px 0 16px;
       grid-area: img;
     }
   }
@@ -24,8 +23,7 @@ export const StyledWrapperdiv = styled.div`
   gap: 16px;
   align-items: center;
   @media only screen and (min-width: 640px) {
-    height: 80px;
-    margin-top: auto;
+    margin-top: 55px;
     justify-content: space-between;
   }
 `;
@@ -57,7 +55,7 @@ export const DownloadIcons = styled.div`
   display: flex;
   column-gap: 24px;
   height: 48px;
-  margin-top: 34px;
+  margin-top: 32px;
   grid-area: areaB;
 `;
 

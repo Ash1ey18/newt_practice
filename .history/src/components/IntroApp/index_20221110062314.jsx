@@ -8,7 +8,6 @@ import {
   Styledaside,
   StyledWrapperdiv,
   ImgWrapper,
-  DownloadIcons,
   BtnDiv,
   StyledSpan,
 } from "./style";
@@ -45,10 +44,9 @@ export default function IntroApp() {
         </ImgWrapper>
       )}
       {isTablet && (
-        <DownloadIcons>
-          <Image src="/img/img27.png" alt="" width={150} height={48} />
-          <Image src="/img/img28.png" alt="" width={150} height={48} />
-        </DownloadIcons>
+        <>
+          <Image src="/img/img27.png" alt="" width={150} height={48px}/>
+        </>
       )}
       {isTablet || (
         <BtnDiv>

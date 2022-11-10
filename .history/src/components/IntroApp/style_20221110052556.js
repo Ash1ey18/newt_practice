@@ -3,42 +3,18 @@ import styled from "styled-components";
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
-  @media only screen and (min-width: 640px) {
-    padding: 0;
-    display: grid;
-    grid-template:
-      "img areaA" 1fr
-      "img areaB" 130px
-      / auto 350px;
-    justify-content: space-between;
-    & > span {
-      margin: 14px 0 16px !important;
-      grid-area: img;
-    }
-  }
 `;
 
 export const StyledWrapperdiv = styled.div`
   display: flex;
   justify-content: center;
   gap: 16px;
-  align-items: center;
-  @media only screen and (min-width: 640px) {
-    height: 80px;
-    margin-top: auto;
-    justify-content: space-between;
-  }
 `;
 export const StyledSpan = styled.span`
   white-space: pre-wrap;
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.29em;
-  @media only screen and (min-width: 640px) {
-    font-size: 20px;
-    display: inline-block;
-    margin-right: 14px;
-  }
 `;
 export const ImgWrapper = styled.div`
   margin-top: 20px;
@@ -49,18 +25,20 @@ export const ImgWrapper = styled.div`
   & img {
     position: relative !important;
     width: 100% !important;
-    height: 245px !important;
+    height: unset !important;
+    margin: 0 52px !im;
   }
 `;
 
-export const DownloadIcons = styled.div`
-  display: flex;
-  column-gap: 24px;
-  height: 48px;
-  margin-top: 34px;
-  grid-area: areaB;
+export const StyledImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 289px;
+  height: 245px;
+  object-position: center top;
+  object-fit: cover;
 `;
-
 export const BtnDiv = styled.div`
   margin-top: 24px;
   padding: 10px 0;

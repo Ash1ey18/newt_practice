@@ -8,9 +8,9 @@ import {
   Styledaside,
   StyledWrapperdiv,
   ImgWrapper,
-  DownloadIcons,
   BtnDiv,
   StyledSpan,
+  StyledImg,
 } from "./style";
 import { useMqContext } from "src/Context/MediaQueryContext";
 
@@ -19,37 +19,19 @@ export default function IntroApp() {
   return (
     <Styledaside>
       <StyledWrapperdiv>
-        <Image
-          src="/img/newtbigicon.svg"
-          alt="newt icon"
-          width={isTablet ? 80 : 48}
-          height={isTablet ? 80 : 48}
-        />
+        <Image src="/img/newtAppIcon.svg" alt="" width={48} height={48} />
         <StyledSpan>{`NEWT（ニュート)\nスマートに海外旅行`}</StyledSpan>
       </StyledWrapperdiv>
       {isTablet ? (
-        <Image
-          src="/img/img26.png"
-          alt="スマートフォン"
-          width={212}
-          height={269}
-        />
+        <ImgWrapper>
+          <StyledImg src="/img/img26.png" alt="スマートフォン" />
+        </ImgWrapper>
       ) : (
         <ImgWrapper>
-          <Image
-            src="/img/img30.png"
-            alt="スマートフォン"
-            layout="fill"
-            objectFit="contain"
-          />
+          <StyledImg src="/img/img30.png" alt="スマートフォン" />
         </ImgWrapper>
       )}
-      {isTablet && (
-        <DownloadIcons>
-          <Image src="/img/img27.png" alt="" width={150} height={48} />
-          <Image src="/img/img28.png" alt="" width={150} height={48} />
-        </DownloadIcons>
-      )}
+
       {isTablet || (
         <BtnDiv>
           <Link href="https://app.adjust.com/u1e28tl">

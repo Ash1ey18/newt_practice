@@ -4,15 +4,15 @@ export const Styledaside = styled.aside`
   border-top: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
   @media only screen and (min-width: 640px) {
-    padding: 0;
+    /* padding: 0; */
     display: grid;
     grid-template:
       "img areaA" 1fr
-      "img areaB" 130px
+      "img areaB" 1fr
       / auto 350px;
     justify-content: space-between;
-    & > span {
-      margin: 14px 0 16px !important;
+    row-gap: 32px;
+    & span {
       grid-area: img;
     }
   }
@@ -23,22 +23,12 @@ export const StyledWrapperdiv = styled.div`
   justify-content: center;
   gap: 16px;
   align-items: center;
-  @media only screen and (min-width: 640px) {
-    height: 80px;
-    margin-top: auto;
-    justify-content: space-between;
-  }
 `;
 export const StyledSpan = styled.span`
   white-space: pre-wrap;
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.29em;
-  @media only screen and (min-width: 640px) {
-    font-size: 20px;
-    display: inline-block;
-    margin-right: 14px;
-  }
 `;
 export const ImgWrapper = styled.div`
   margin-top: 20px;
@@ -51,14 +41,6 @@ export const ImgWrapper = styled.div`
     width: 100% !important;
     height: 245px !important;
   }
-`;
-
-export const DownloadIcons = styled.div`
-  display: flex;
-  column-gap: 24px;
-  height: 48px;
-  margin-top: 34px;
-  grid-area: areaB;
 `;
 
 export const BtnDiv = styled.div`

@@ -8,7 +8,7 @@ import {
   Styledaside,
   StyledWrapperdiv,
   ImgWrapper,
-  DownloadIcons,
+  StyledImage,
   BtnDiv,
   StyledSpan,
 } from "./style";
@@ -20,15 +20,15 @@ export default function IntroApp() {
     <Styledaside>
       <StyledWrapperdiv>
         <Image
-          src="/img/newtbigicon.svg"
+          src="/img/newtAppIcon.svg"
           alt="newt icon"
-          width={isTablet ? 80 : 48}
-          height={isTablet ? 80 : 48}
+          width={48}
+          height={48}
         />
         <StyledSpan>{`NEWT（ニュート)\nスマートに海外旅行`}</StyledSpan>
       </StyledWrapperdiv>
       {isTablet ? (
-        <Image
+        <StyledImage
           src="/img/img26.png"
           alt="スマートフォン"
           width={212}
@@ -43,12 +43,6 @@ export default function IntroApp() {
             objectFit="contain"
           />
         </ImgWrapper>
-      )}
-      {isTablet && (
-        <DownloadIcons>
-          <Image src="/img/img27.png" alt="" width={150} height={48} />
-          <Image src="/img/img28.png" alt="" width={150} height={48} />
-        </DownloadIcons>
       )}
       {isTablet || (
         <BtnDiv>

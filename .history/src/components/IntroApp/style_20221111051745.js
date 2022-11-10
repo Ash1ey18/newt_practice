@@ -57,7 +57,7 @@ export const DownloadIcons = styled.div`
   display: flex;
   column-gap: 24px;
   height: 48px;
-  margin-top: 34px;
+  margin-top: 32px;
   grid-area: areaB;
 `;
 
