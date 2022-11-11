@@ -5,6 +5,7 @@ body {
   font-family: SF Pro Text, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo,
     sans-serif;
   min-height: 100vh;
+  width: 100vw;
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 }
 
 * {
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 ul {

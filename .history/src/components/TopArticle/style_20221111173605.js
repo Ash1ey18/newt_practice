@@ -30,13 +30,21 @@ export const TopArticleWraper = styled.div`
 export const ImgWrapper = styled.div`
   position: relative;
   max-width: 640px;
-
+  height: 282px;
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: #ffff;
+      opacity: 0.4;
+    }
+  }
   > span {
     position: unset !important;
-    &:hover {
-      background-color: #ffff !important;
-      opacity: 0.6 !important;
-    }
     @media only screen and (min-width: ${TabletWidth}) {
       border-radius: 8px;
       overflow: hidden;

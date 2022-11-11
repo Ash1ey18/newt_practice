@@ -18,7 +18,6 @@ export const RcmContainer = styled.section`
 export const TopArticleWraper = styled.div`
   width: 100%;
   @media only screen and (min-width: ${TabletWidth}) {
-    height: 676px;
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;
@@ -33,10 +32,6 @@ export const ImgWrapper = styled.div`
 
   > span {
     position: unset !important;
-    &:hover {
-      background-color: #ffff !important;
-      opacity: 0.6 !important;
-    }
     @media only screen and (min-width: ${TabletWidth}) {
       border-radius: 8px;
       overflow: hidden;

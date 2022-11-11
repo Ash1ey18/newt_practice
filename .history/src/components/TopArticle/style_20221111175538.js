@@ -34,8 +34,8 @@ export const ImgWrapper = styled.div`
   > span {
     position: unset !important;
     &:hover {
-      background-color: #ffff !important;
-      opacity: 0.6 !important;
+      background-color: #ffff;
+      opacity: 0.4;
     }
     @media only screen and (min-width: ${TabletWidth}) {
       border-radius: 8px;
