@@ -50,9 +50,6 @@ export const Listli = styled.li`
   &:nth-child(1) {
     margin-top: 0;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
-    line-height: 20px;
-  }
 `;
 
 export const SnsListul = styled.ul`
@@ -74,6 +71,8 @@ export const SnsListul = styled.ul`
   }
 `;
 export const Snsli = styled.li`
+  width: 40px;
+  height: 40px;
   @media only screen and (min-width: ${TabletWidth}) {
     width: 24px;
     height: 24px;
@@ -87,7 +86,6 @@ export const LowerAreadiv = styled.div`
     padding: 22px 0 76px;
     display: grid;
     grid-template: "copyright linkul";
-    justify-content: space-between;
   }
 `;
 export const Linkul = styled.ul`
@@ -96,8 +94,6 @@ export const Linkul = styled.ul`
   margin: 0;
   @media only screen and (min-width: ${TabletWidth}) {
     grid-area: linkul;
-    display: flex;
-    column-gap: 24px;
   }
 `;
 export const Linkli = styled.li`
@@ -124,6 +120,5 @@ export const CopyRightp = styled.p`
   font-size: 12px;
   @media only screen and (min-width: ${TabletWidth}) {
     margin: 0;
-    grid-area: copyright;
   }
 `;

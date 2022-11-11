@@ -93,18 +93,6 @@ export default function Footer() {
           <Listli>
             <SnsListul>
               <Snsli>
-                <Link href="https://page.line.me/847pjqcp?openQrModal=true">
-                  <a>
-                    <Image
-                      src="/img/linelogo2.svg"
-                      alt="lineIcon"
-                      width={40}
-                      height={40}
-                    />
-                  </a>
-                </Link>
-              </Snsli>
-              <Snsli>
                 <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
                   <a>
                     <Image
@@ -134,6 +122,18 @@ export default function Footer() {
                     <Image
                       src="/img/tiktoklogo2.svg"
                       alt="tiktokIcon"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </Link>
+              </Snsli>
+              <Snsli>
+                <Link href="https://page.line.me/847pjqcp?openQrModal=true">
+                  <a>
+                    <Image
+                      src="/img/linelogo2.svg"
+                      alt="lineIcon"
                       width={40}
                       height={40}
                     />

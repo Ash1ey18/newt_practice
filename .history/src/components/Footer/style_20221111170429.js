@@ -50,9 +50,6 @@ export const Listli = styled.li`
   &:nth-child(1) {
     margin-top: 0;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
-    line-height: 20px;
-  }
 `;
 
 export const SnsListul = styled.ul`
@@ -74,6 +71,8 @@ export const SnsListul = styled.ul`
   }
 `;
 export const Snsli = styled.li`
+  width: 40px;
+  height: 40px;
   @media only screen and (min-width: ${TabletWidth}) {
     width: 24px;
     height: 24px;

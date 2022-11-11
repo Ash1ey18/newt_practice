@@ -50,9 +50,6 @@ export const Listli = styled.li`
   &:nth-child(1) {
     margin-top: 0;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
-    line-height: 20px;
-  }
 `;
 
 export const SnsListul = styled.ul`

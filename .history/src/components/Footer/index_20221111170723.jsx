@@ -105,11 +105,11 @@ export default function Footer() {
                 </Link>
               </Snsli>
               <Snsli>
-                <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
+                <Link href="https://www.instagram.com/newt.travel/?hl=ja&openExternalBrowser=1">
                   <a>
                     <Image
-                      src="/img/twitterlogo2.svg"
-                      alt="twitterIcon"
+                      src="/img/instagramlogo2.svg"
+                      alt="instagramIcon"
                       width={40}
                       height={40}
                     />
@@ -117,11 +117,11 @@ export default function Footer() {
                 </Link>
               </Snsli>
               <Snsli>
-                <Link href="https://www.instagram.com/newt.travel/?hl=ja&openExternalBrowser=1">
+                <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
                   <a>
                     <Image
-                      src="/img/instagramlogo2.svg"
-                      alt="instagramIcon"
+                      src="/img/twitterlogo2.svg"
+                      alt="twitterIcon"
                       width={40}
                       height={40}
                     />
