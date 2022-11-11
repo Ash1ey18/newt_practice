@@ -36,11 +36,11 @@ export const SectionTitleh2 = styled.h2`
   line-height: 24px;
 `;
 export const SectionListul = styled.ul`
+  list-style: none;
   margin-bottom: 0;
   margin-top: 16px;
 `;
 export const Listli = styled.li`
-  list-style: none;
   font-size: 12px;
   margin-top: 12px;
   & a:hover {
@@ -55,7 +55,6 @@ export const Listli = styled.li`
 export const SnsListul = styled.ul`
   list-style: none;
   margin-top: 16px;
-  margin-bottom: 0;
   height: 40px;
   display: flex;
   justify-content: left;
@@ -65,16 +64,6 @@ export const SnsListul = styled.ul`
     opacity: 0.6;
   }
   @media only screen and (min-width: ${TabletWidth}) {
-    height: 24px;
-    margin-top: 12px;
-    column-gap: 8px;
-  }
-`;
-export const Snsli = styled.li`
-  width: 40px;
-  height: 40px;
-  @media only screen and (min-width: ${TabletWidth}) {
-    width: 24px;
     height: 24px;
   }
 `;

@@ -55,7 +55,6 @@ export const Listli = styled.li`
 export const SnsListul = styled.ul`
   list-style: none;
   margin-top: 16px;
-  margin-bottom: 0;
   height: 40px;
   display: flex;
   justify-content: left;
@@ -66,8 +65,6 @@ export const SnsListul = styled.ul`
   }
   @media only screen and (min-width: ${TabletWidth}) {
     height: 24px;
-    margin-top: 12px;
-    column-gap: 8px;
   }
 `;
 export const Snsli = styled.li`

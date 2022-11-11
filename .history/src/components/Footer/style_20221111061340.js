@@ -5,26 +5,18 @@ export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;
   background-color: #f6f6f6;
   padding: 0 24px;
-  @media only screen and (min-width: ${TabletWidth}) {
-    padding: 0;
-  }
 `;
 
 export const Nav = styled.nav`
   padding: 32px 0 40px;
   @media only screen and (min-width: ${TabletWidth}) {
     padding: 39px 0 36px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
 
 export const Section = styled.section`
   margin-bottom: 40px;
-  &:last-child {
-    margin: 0;
-  }
-  @media only screen and (min-width: ${TabletWidth}) {
+  &:nth-child(4) {
     margin: 0;
   }
 `;
@@ -36,11 +28,11 @@ export const SectionTitleh2 = styled.h2`
   line-height: 24px;
 `;
 export const SectionListul = styled.ul`
+  list-style: none;
   margin-bottom: 0;
   margin-top: 16px;
 `;
 export const Listli = styled.li`
-  list-style: none;
   font-size: 12px;
   margin-top: 12px;
   & a:hover {
@@ -52,10 +44,8 @@ export const Listli = styled.li`
   }
 `;
 
-export const SnsListul = styled.ul`
-  list-style: none;
+export const SnsListdiv = styled.div`
   margin-top: 16px;
-  margin-bottom: 0;
   height: 40px;
   display: flex;
   justify-content: left;
@@ -63,19 +53,6 @@ export const SnsListul = styled.ul`
 
   & a:hover {
     opacity: 0.6;
-  }
-  @media only screen and (min-width: ${TabletWidth}) {
-    height: 24px;
-    margin-top: 12px;
-    column-gap: 8px;
-  }
-`;
-export const Snsli = styled.li`
-  width: 40px;
-  height: 40px;
-  @media only screen and (min-width: ${TabletWidth}) {
-    width: 24px;
-    height: 24px;
   }
 `;
 

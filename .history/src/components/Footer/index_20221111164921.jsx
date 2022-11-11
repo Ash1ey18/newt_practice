@@ -16,10 +16,10 @@ import {
   Linkli,
   CopyRightsmall,
 } from "./style";
-// import { useMqContext } from "src/Context/MediaQueryContext";
-// const isTablet = useMqContext();
+import { useMqContext } from "src/Context/MediaQueryContext";
 
 export default function Footer() {
+  const isTablet = useMqContext();
   return (
     <FooterWrapper>
       <Nav>

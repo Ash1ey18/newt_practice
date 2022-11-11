@@ -9,17 +9,16 @@ import {
   SectionTitleh2,
   SectionListul,
   Listli,
-  SnsListul,
-  Snsli,
+  SnsListdiv,
   LowerAreadiv,
   Linkul,
   Linkli,
   CopyRightsmall,
 } from "./style";
-// import { useMqContext } from "src/Context/MediaQueryContext";
-// const isTablet = useMqContext();
+import { useMqContext } from "src/Context/MediaQueryContext";
 
 export default function Footer() {
+  const isTablet = useMqContext();
   return (
     <FooterWrapper>
       <Nav>
@@ -92,72 +91,63 @@ export default function Footer() {
               </Link>
             </Listli>
           </SectionListul>
-          <Listli>
-            <SnsListul>
-              <Snsli>
-                <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
-                  <a>
-                    <Image
-                      src="/img/twitterlogo2.svg"
-                      alt="twitterIcon"
-                      width={40}
-                      height={40}
-                      // width={isTablet ? 24 : 40}
-                      // height={isTablet ? 24 : 40}
-                    />
-                  </a>
-                </Link>
-              </Snsli>
-              <Snsli>
-                <Link href="https://www.instagram.com/newt.travel/?hl=ja&openExternalBrowser=1">
-                  <a>
-                    <Image
-                      src="/img/instagramlogo2.svg"
-                      alt="instagramIcon"
-                      width={40}
-                      height={40}
-                    />
-                  </a>
-                </Link>
-              </Snsli>
-              <Snsli>
-                <Link href="https://www.tiktok.com/@newt_travel?openExternalBrowser=1">
-                  <a>
-                    <Image
-                      src="/img/tiktoklogo2.svg"
-                      alt="tiktokIcon"
-                      width={40}
-                      height={40}
-                    />
-                  </a>
-                </Link>
-              </Snsli>
-              <Snsli>
-                <Link href="https://page.line.me/847pjqcp?openQrModal=true">
-                  <a>
-                    <Image
-                      src="/img/linelogo2.svg"
-                      alt="lineIcon"
-                      width={40}
-                      height={40}
-                    />
-                  </a>
-                </Link>
-              </Snsli>
-              <Snsli>
-                <Link href="https://www.youtube.com/channel/UCdM6a4_8TQCR03ShAGU8CyQ">
-                  <a>
-                    <Image
-                      src="/img/youtubelogo2.svg"
-                      alt="youtubeIcon"
-                      width={40}
-                      height={40}
-                    />
-                  </a>
-                </Link>
-              </Snsli>
-            </SnsListul>
-          </Listli>
+          <SnsListdiv>
+            <Link href="https://twitter.com/newt_travel?openExternalBrowser=1">
+              <a>
+                <Image
+                  src="/img/twitterlogo2.svg"
+                  alt="twitterIcon"
+                  // width={40}
+                  // height={40}
+                  width={isTablet ? 24 : 40}
+                  height={isTablet ? 24 : 40}
+                />
+              </a>
+            </Link>
+
+            <Link href="https://www.instagram.com/newt.travel/?hl=ja&openExternalBrowser=1">
+              <a>
+                <Image
+                  src="/img/instagramlogo2.svg"
+                  alt="instagramIcon"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </Link>
+
+            <Link href="https://www.tiktok.com/@newt_travel?openExternalBrowser=1">
+              <a>
+                <Image
+                  src="/img/tiktoklogo2.svg"
+                  alt="tiktokIcon"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </Link>
+
+            <Link href="https://page.line.me/847pjqcp?openQrModal=true">
+              <a>
+                <Image
+                  src="/img/linelogo2.svg"
+                  alt="lineIcon"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCdM6a4_8TQCR03ShAGU8CyQ">
+              <a>
+                <Image
+                  src="/img/youtubelogo2.svg"
+                  alt="youtubeIcon"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </Link>
+          </SnsListdiv>
         </Section>
       </Nav>
 

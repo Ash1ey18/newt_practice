@@ -55,7 +55,6 @@ export const Listli = styled.li`
 export const SnsListul = styled.ul`
   list-style: none;
   margin-top: 16px;
-  margin-bottom: 0;
   height: 40px;
   display: flex;
   justify-content: left;
