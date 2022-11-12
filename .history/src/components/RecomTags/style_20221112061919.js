@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TabletWidth, ContentsMaxWidth } from "src/variables";
+import { tabletWidth, contentsMaxWidth } from "src/variables";
 
 export const TagsWrapperDiv = styled.div`
   background-color: #fafafa;
@@ -8,8 +8,8 @@ export const TagsWrapperDiv = styled.div`
   border: 1px solid #eeeeee;
   border-radius: 5px;
 
-  @media only screen and (min-width: ${TabletWidth}) {
-    max-width: ${ContentsMaxWidth};
+  @media only screen and (min-width: ${tabletWidth}) {
+    max-width: ${contentsMaxWidth};
     margin: 32px 0 0 0;
   }
 `;
@@ -19,7 +19,7 @@ export const StyledUl = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 10px 10px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     gap: 8px 16px;
   }
 `;

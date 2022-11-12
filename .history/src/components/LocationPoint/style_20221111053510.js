@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 export const LocationDiv = styled.div`
   height: 18px;
   font-size: 14px;
@@ -16,7 +16,7 @@ export const LocationDiv = styled.div`
       opacity: 0.6;
     }
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     width: 100%;
     font-size: ${(props) => (props.isTop ? "16px" : "14px")};
     margin-top: ${(props) => (props.isTop ? undefined : "2px")};

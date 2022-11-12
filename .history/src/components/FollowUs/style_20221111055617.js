@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeee;
   padding: 24px;
   text-align: center;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     display: grid;
     grid-template:
       "title iconList"
@@ -22,7 +22,7 @@ export const Styledh1 = styled.h1`
   letter-spacing: 0.3em;
   line-height: 32px;
   margin: 0;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     grid-area: title;
     letter-spacing: 0.3em;
   }
@@ -33,7 +33,7 @@ export const Styledp = styled.p`
   margin: 16px 0 0 0;
   letter-spacing: 1.5px;
   line-height: 28px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     grid-area: description;
   }
 `;
@@ -48,7 +48,7 @@ export const SnsListul = styled.ul`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin: 0;
     height: 48px;
     grid-area: iconList;

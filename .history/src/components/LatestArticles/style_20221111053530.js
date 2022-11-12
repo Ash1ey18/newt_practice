@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
   margin-left: 20px;
   margin-right: 20px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin: 16px 0 0;
   }
 `;
@@ -20,7 +20,7 @@ export const ArticleWraper = styled.div`
     /128px 1fr;
   column-gap: 16px;
 
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     height: auto;
     grid-template:
       "img title"
@@ -48,7 +48,7 @@ export const Title = styled.h1`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     font-size: 20px;
   }
 `;

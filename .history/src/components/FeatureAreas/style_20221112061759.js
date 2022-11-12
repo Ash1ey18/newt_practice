@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { TabletWidth, ContentsMaxWidth } from "src/variables";
+import { tabletWidth, contentsMaxWidth } from "src/variables";
 export const StyledUl = styled.ul`
-  max-width: ${ContentsMaxWidth};
+  max-width: ${contentsMaxWidth};
   list-style: none;
   margin: 31px 20px 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin: 48px 0 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -44,7 +44,7 @@ export const StyledDiv = styled.div`
     left: 50%;
     z-index: 200;
     transform: translate(-50%, -50%);
-    @media only screen and (min-width: ${TabletWidth}) {
+    @media only screen and (min-width: ${tabletWidth}) {
       min-width: 145px;
       font-size: 18px;
       font-weight: 600;

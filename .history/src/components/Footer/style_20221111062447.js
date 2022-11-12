@@ -1,18 +1,18 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;
   background-color: #f6f6f6;
   padding: 0 24px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     padding: 0;
   }
 `;
 
 export const Nav = styled.nav`
   padding: 32px 0 40px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     padding: 39px 0 36px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -24,7 +24,7 @@ export const Section = styled.section`
   &:last-child {
     margin: 0;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin: 0;
   }
 `;
@@ -62,7 +62,7 @@ export const SnsListdiv = styled.div`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     /* height: 24px; */
   }
 `;

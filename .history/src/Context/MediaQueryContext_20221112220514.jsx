@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext, createContext } from "react";
 import { useMediaQuery } from "react-responsive";
-import { TabletWidth, LaptopWidth } from "src/variables";
+import { tabletWidth, LaptopWidth } from "src/variables";
 
 export const TabletQueryContext = createContext();
 export const LaptopQueryContext = createContext();
@@ -8,7 +8,7 @@ export const LaptopQueryContext = createContext();
 export function MediaQueryProvider({ children }) {
   const [hydrated, setHydrated] = useState(false);
   const isTablet = useMediaQuery(
-    { query: `(min-width: ${TabletWidth})` },
+    { query: `(min-width: ${tabletWidth})` },
     hydrated ? undefined : { deviceWidth: 1600 }
   );
   const isLaptop = useMediaQuery(

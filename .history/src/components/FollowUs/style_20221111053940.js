@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeee;
   padding: 24px;
   text-align: center;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     display: grid;
     grid-template:
       "title iconList"
@@ -38,7 +38,7 @@ export const SnsListul = styled.ul`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     grid-area: iconList;
   }
 `;

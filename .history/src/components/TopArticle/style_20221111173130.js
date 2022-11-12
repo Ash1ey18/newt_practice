@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const RcmContainer = styled.section`
   background-color: #e4f8ea;
   letter-spacing: 0.05em;
   width: 100%;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     background: linear-gradient(
       90deg,
       transparent,
@@ -17,7 +17,7 @@ export const RcmContainer = styled.section`
 `;
 export const TopArticleWraper = styled.div`
   width: 100%;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     padding-top: 56px;
     padding-bottom: 60px;
     display: grid;
@@ -31,7 +31,7 @@ export const ImgWrapper = styled.div`
   max-width: 640px;
   > span {
     position: unset !important;
-    @media only screen and (min-width: ${TabletWidth}) {
+    @media only screen and (min-width: ${tabletWidth}) {
       border-radius: 8px;
       overflow: hidden;
     }
@@ -58,7 +58,7 @@ export const ImgWrapper = styled.div`
 export const Contents = styled.div`
   width: 100%;
   padding: 16px 20px 20px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     height: 100%;
     padding: 0;
   }
@@ -70,7 +70,7 @@ export const ArticleTitle = styled.h1`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     letter-spacing: 0.05em;
     font-size: 28px;
     line-height: 48px;
@@ -89,7 +89,7 @@ export const ArticleInfo = styled.div`
   > span:nth-child(1) {
     grid-area: areaA;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin-top: 16px;
   }
 `;
@@ -122,7 +122,7 @@ export const Location = styled.div`
       opacity: 0.6;
     }
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     font-size: 16px;
     height: 24px;
     gap: 6px;

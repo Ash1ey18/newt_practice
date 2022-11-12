@@ -1,1 +1,1 @@
-export const TabletWidth = "640px";
+export const tabletWidth = "640px";

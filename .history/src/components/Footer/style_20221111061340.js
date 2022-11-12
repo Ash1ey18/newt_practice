@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;
@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
 
 export const Nav = styled.nav`
   padding: 32px 0 40px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     padding: 39px 0 36px;
   }
 `;

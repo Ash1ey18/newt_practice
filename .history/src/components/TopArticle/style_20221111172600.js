@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const RcmContainer = styled.section`
   background-color: #e4f8ea;
   letter-spacing: 0.05em;
   width: 100%;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     position: relative;
     z-index: -100;
     background: linear-gradient(
@@ -91,7 +91,7 @@ export const ArticleInfo = styled.div`
   > span:nth-child(1) {
     grid-area: areaA;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin-top: 16px;
   }
 `;
@@ -124,7 +124,7 @@ export const Location = styled.div`
       opacity: 0.6;
     }
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     font-size: 16px;
     height: 24px;
     gap: 6px;

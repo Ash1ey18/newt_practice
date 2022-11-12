@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 56px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     padding-left: 48px;
     padding-right: 56px;
     height: 80px;

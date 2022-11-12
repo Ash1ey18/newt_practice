@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { TabletWidth, ContentsMaxWidth } from "src/variables";
+import { tabletWidth, contentsMaxWidth } from "src/variables";
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
   margin-left: 20px;
   margin-right: 20px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     margin: 16px auto 0;
-    max-width: ${ContentsMaxWidth};
+    max-width: ${contentsMaxWidth};
   }
 `;
 
@@ -21,7 +21,7 @@ export const ArticleWraper = styled.div`
     /128px 1fr;
   column-gap: 16px;
 
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     height: auto;
     grid-template:
       "img title"
@@ -49,7 +49,7 @@ export const Title = styled.h1`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     font-size: 20px;
   }
 `;
@@ -64,7 +64,7 @@ export const ArtiDescriotn = styled.p`
 
 export const BtnDiv = styled.div`
   height: 48px;
-  /* max-width: ${ContentsMaxWidth}; */
+  /* max-width: ${contentsMaxWidth}; */
   border: 1px solid #1f1f1f;
   border-radius: 30px;
   margin: 30px 24px 0 24px;

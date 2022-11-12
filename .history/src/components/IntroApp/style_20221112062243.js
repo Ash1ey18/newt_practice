@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     max-width: 980px;
     margin: 0 auto;
     padding: 0;
@@ -25,7 +25,7 @@ export const StyledWrapperdiv = styled.div`
   justify-content: center;
   gap: 16px;
   align-items: center;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     height: 80px;
     margin-top: auto;
     justify-content: space-between;
@@ -36,7 +36,7 @@ export const StyledSpan = styled.span`
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.29em;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     font-size: 20px;
     display: inline-block;
     margin-right: 14px;

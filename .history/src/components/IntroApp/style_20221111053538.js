@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;

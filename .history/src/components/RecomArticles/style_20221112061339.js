@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { TabletWidth, ContentsMaxWidth } from "src/variables";
+import { tabletWidth, contentsMaxWidth } from "src/variables";
 export const ArticlesWraper = styled.div`
-  max-width: ${ContentsMaxWidth};
+  max-width: ${contentsMaxWidth};
   margin: 19px 20px 0;
   display: grid;
   grid-template:
@@ -10,7 +10,7 @@ export const ArticlesWraper = styled.div`
     "area area" 1fr
     /1fr 1fr;
   gap: 20px 15px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     display: grid;
     grid-template:
       "area area area" 1fr
@@ -24,14 +24,14 @@ export const ArticleWraper = styled.div`
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     display: flex;
     flex-direction: column;
   }
 `;
 export const ArticleContentdiv = styled.div`
   padding: 10px;
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     padding: 16px;
     display: flex;
     flex: auto;
@@ -45,7 +45,7 @@ export const Title = styled.h1`
   & a:hover {
     opacity: 0.6;
   }
-  @media only screen and (min-width: ${TabletWidth}) {
+  @media only screen and (min-width: ${tabletWidth}) {
     font-size: 16px;
     line-height: 28px;
     margin-bottom: auto;

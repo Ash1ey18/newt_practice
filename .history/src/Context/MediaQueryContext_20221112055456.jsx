@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useContext, createContext } from "react";
 import { useMediaQuery } from "react-responsive";
-import { TabletWidth } from "src/variables";
+import { tabletWidth } from "src/variables";
 
 export const MediaQueryContext = createContext();
 
 export function MediaQueryProvider({ children }) {
   const [hydrated, setHydrated] = useState(false);
   const isTablet = useMediaQuery(
-    { query: `(min-width: ${TabletWidth})` },
+    { query: `(min-width: ${tabletWidth})` },
     hydrated ? undefined : { deviceWidth: 1600 }
   );
   useEffect(() => {
