@@ -4,18 +4,19 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 56px;
-  > a > span {
-    vertical-align: middle;
-  }
+  /* height: 56px; */
+  vertical-align: middle;
   @media only screen and (min-width: ${tabletWidth}) {
     padding-left: 48px;
     padding-right: 56px;
     height: 80px;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
-    & > a:hover {
-      opacity: 0.6;
+    & > a {
+      height: 24px;
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 `;

@@ -4,9 +4,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 56px;
-  > a > span {
-    vertical-align: middle;
+  /* height: 56px; */
+  > a {
+    height: 24px;
   }
   @media only screen and (min-width: ${tabletWidth}) {
     padding-left: 48px;

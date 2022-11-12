@@ -5,8 +5,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 56px;
-  > a > span {
-    vertical-align: middle;
+  > a {
+    /* height: 24px; */
   }
   @media only screen and (min-width: ${tabletWidth}) {
     padding-left: 48px;

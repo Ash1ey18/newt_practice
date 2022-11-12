@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { tabletWidth, marginTop } from "src/variables";
 export const LocationDiv = styled.div`
   height: 18px;
-  font-size: ${(props) => (props.isTop ? "14px" : "12px")};
+  font-size: 12px;
   font-weight: ${(props) => (props.isTop ? "600" : "500")};
   letter-spacing: 0.05em;
   display: flex;
