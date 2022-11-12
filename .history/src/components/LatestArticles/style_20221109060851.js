@@ -56,7 +56,7 @@ export const ArtiDescriotn = styled.p`
   margin: px 0 0 0;
   font-size: 14px;
   color: #1f1f1f;
-  line-height: 24px;
+  line-height: ${lh_md};
   opacity: 0.7;
 `;
 

@@ -133,6 +133,6 @@ export const Location = styled.div`
   }
   @media only screen and (min-width: 640px) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: ${lh_md};
   }
 `;

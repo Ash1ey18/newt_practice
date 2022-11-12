@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletWidth } from "src/variables";
+import { tabletWidth, marginTop, lh_md } from "src/variables";
 
 export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;
@@ -13,6 +13,8 @@ export const FooterWrapper = styled.footer`
 export const Nav = styled.nav`
   padding: 32px 0 40px;
   @media only screen and (min-width: ${tabletWidth}) {
+    max-width: ${contentsMaxWidth};
+    margin: auto;
     padding: 39px 0 36px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -50,6 +52,9 @@ export const Listli = styled.li`
   &:nth-child(1) {
     margin-top: 0;
   }
+  @media only screen and (min-width: ${tabletWidth}) {
+    line-height: 20px;
+  }
 `;
 
 export const SnsListul = styled.ul`
@@ -71,8 +76,6 @@ export const SnsListul = styled.ul`
   }
 `;
 export const Snsli = styled.li`
-  width: 40px;
-  height: 40px;
   @media only screen and (min-width: ${tabletWidth}) {
     width: 24px;
     height: 24px;
@@ -82,11 +85,24 @@ export const Snsli = styled.li`
 export const LowerAreadiv = styled.div`
   padding: 32px 0 40px;
   border-top: 1px solid #e0e0e0;
+  @media only screen and (min-width: ${tabletWidth}) {
+    max-width: ${contentsMaxWidth};
+    margin: auto;
+    padding: 22px 0 76px;
+    display: grid;
+    grid-template: "copyright linkul";
+    justify-content: space-between;
+  }
 `;
 export const Linkul = styled.ul`
   list-style: none;
   line-height: 20px;
   margin: 0;
+  @media only screen and (min-width: ${tabletWidth}) {
+    grid-area: linkul;
+    display: flex;
+    column-gap: 24px;
+  }
 `;
 export const Linkli = styled.li`
   font-size: 12px;
@@ -98,10 +114,20 @@ export const Linkli = styled.li`
   &:last-child {
     margin-bottom: 20px;
   }
+  @media only screen and (min-width: ${tabletWidth}) {
+    margin: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
-export const CopyRightsmall = styled.p`
+export const CopyRightp = styled.p`
   width: 100%;
   margin-top: 34px;
   margin-bottom: 0;
   font-size: 12px;
+  @media only screen and (min-width: ${tabletWidth}) {
+    margin: 0;
+    grid-area: copyright;
+  }
 `;

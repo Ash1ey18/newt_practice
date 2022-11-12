@@ -7,7 +7,7 @@ export const StyledTime = styled.time`
   opacity: 0.7;
   margin-top: ${(props) => (props.isTop ? 0 : marginTop)};
   @media only screen and (min-width: ${tabletWidth}) {
-    line-height: 24px;
+    line-height: ${lh_md};
     letter-spacing: 0.05em;
   }
 `;

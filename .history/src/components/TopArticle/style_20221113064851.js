@@ -99,7 +99,7 @@ export const Descriotionp = styled.p`
 
 export const Author = styled.div`
   font-size: 14px;
-  line-height: 24px;
+  line-height: ${lh_md};
   font-weight: 600;
 `;
 

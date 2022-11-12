@@ -36,7 +36,7 @@ export const Title = styled.h2`
   @media only screen and (min-width: 640px) {
     font-size: 16px;
     & a {
-      line-height: 24px;
+      line-height: ${lh_md};
     }
   }
 `;

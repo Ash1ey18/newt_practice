@@ -38,6 +38,6 @@ export const BtnDiv = styled.div`
   border-radius: 30px;
   color: white;
   font-weight: 600;
-  line-height: 24px;
+  line-height: ${lh_md};
   text-align: center;
 `;

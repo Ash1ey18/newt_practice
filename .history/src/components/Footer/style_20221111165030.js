@@ -33,7 +33,7 @@ export const SectionTitleh2 = styled.h2`
   margin: 0;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: ${lh_md};
 `;
 export const SectionListul = styled.ul`
   /* list-style: none; */

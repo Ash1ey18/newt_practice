@@ -51,7 +51,7 @@ export const Title = styled.h1`
 
 export const ArtiDescriotn = styled.p`
   color: #1f1f1f;
-  line-height: 24px;
+  line-height: ${lh_md};
 `;
 
 export const BtnDiv = styled.div`
