@@ -57,7 +57,7 @@ export const Title = styled.h1`
   }
   @media only screen and (min-width: ${tabletWidth}) {
     font-size: 20px;
-    line-height: ${lh_latestArtiTitle};
+    /* line-height: ${lh_latestArtiTitle}; */
   }
 `;
 

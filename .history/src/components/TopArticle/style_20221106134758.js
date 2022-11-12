@@ -45,7 +45,7 @@ export const ArticleTitle = styled.h1`
   @media only screen and (min-width: 640px) {
     letter-spacing: 4px;
     font-size: 28px;
-    line-height: 48px;
+    line-height: ${lh_lg};
   }
 `;
 

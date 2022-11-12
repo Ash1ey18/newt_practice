@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import {
-  tabletWidth,
-  contentsMaxWidth,
-  marginTop,
-  lh_md,
-  lh_latestArtiTitle,
-} from "src/variables";
+import { tabletWidth, contentsMaxWidth, marginTop, lh_md } from "src/variables";
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
   margin-left: 20px;
