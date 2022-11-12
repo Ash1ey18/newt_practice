@@ -14,10 +14,10 @@ import {
 
 import LocationPoint from "src/components/LocationPoint";
 import ArticleDate from "src/components/ArticleDate";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function LatesetArticles() {
-  const isTablet = useMqContext();
+  const isTablet = useTabletMqContext();
   return (
     <SectionWraper where="latestArti">
       <h2>最新の記事</h2>

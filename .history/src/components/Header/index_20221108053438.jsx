@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link.js";
 import { Container, HeaderSnsListul, SnsListli } from "./style";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function Header() {
   debugger;

@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Styledaside, Styledh1, Styledp, SnsListul } from "./style";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function FollowUs() {
-  const isTablet = useMqContext();
+  const isTablet = useTabletMqContext();
   return (
     <Styledaside>
       <Styledh1>Follow Us</Styledh1>

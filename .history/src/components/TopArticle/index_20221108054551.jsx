@@ -15,9 +15,9 @@ import {
 } from "./style";
 import LoctionPoint from "src/components/LocationPoint";
 import ArticleDate from "src/components/ArticleDate";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 export default function Reccomend() {
-  // const isTablet = useMqContext();
+  // const isTablet = useTabletMqContext();
   return (
     <RcmContainer>
       <TopArticleWraper>

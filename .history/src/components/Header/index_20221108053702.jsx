@@ -4,11 +4,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link.js";
 import { Container, HeaderSnsListul, SnsListli } from "./style";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function Header() {
   // debugger;
-  const isTablet = useMqContext();
+  const isTablet = useTabletMqContext();
   return (
     <Container>
       <Image src="/img/newtlogo1.svg" alt="newt" width={144} height={27} />

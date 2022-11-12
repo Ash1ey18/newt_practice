@@ -12,10 +12,10 @@ import {
   StyledSpan,
   StyledImg,
 } from "./style";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function IntroApp() {
-  const isTablet = useMqContext();
+  const isTablet = useTabletMqContext();
   return (
     <Styledaside>
       <StyledWrapperdiv>

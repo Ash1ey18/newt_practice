@@ -19,7 +19,7 @@ export function MediaQueryProvider({ children }) {
   );
 }
 
-export function useMqContext() {
+export function useTabletMqContext() {
   debugger;
   useContext(MediaQueryContext);
 }

@@ -16,8 +16,8 @@ import {
   Linkli,
   CopyRightp,
 } from "./style";
-// import { useMqContext } from "src/Context/MediaQueryContext";
-// const isTablet = useMqContext();
+// import { useTabletMqContext } from "src/Context/MediaQueryContext";
+// const isTablet = useTabletMqContext();
 
 export default function Footer() {
   return (

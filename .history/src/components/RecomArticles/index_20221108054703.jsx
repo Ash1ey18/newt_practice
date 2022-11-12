@@ -11,10 +11,10 @@ import SectionWraper from "src/components/SectionWrapper";
 import ArticleImg from "src/components/ArticleImg";
 import LoctionPoint from "src/components/LocationPoint";
 import ArticleDate from "src/components/ArticleDate";
-import { useMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function RecomArticles() {
-  const isTablet = useMqContext();
+  const isTablet = useTabletMqContext();
 
   return (
     <SectionWraper type={"recomArti"}>
