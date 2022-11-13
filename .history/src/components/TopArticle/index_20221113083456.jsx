@@ -13,7 +13,7 @@ import {
   Contents,
   Descriotionp,
 } from "./style";
-import LoctionPoint from "src/components/elements/LocationPoint";
+import LoctionPoint from "src/components/LocationPoint";
 import ArticleDate from "src/components/elements/ArticleDate";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
 

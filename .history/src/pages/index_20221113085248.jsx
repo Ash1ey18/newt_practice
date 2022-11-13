@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "src/components/Layout";
+import { Layout } from "src/components/Layout";
 
 import TopArticle from "src/components/TopArticle";
 import RecomArticles from "src/components/RecomArticles";

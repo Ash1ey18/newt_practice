@@ -7,9 +7,9 @@ import {
   ArticleContentdiv,
   Title,
 } from "./style";
-import SectionWraper from "src/components/elements/SectionWrapper";
-import ArticleImg from "src/components/elements/ArticleImg";
-import LoctionPoint from "src/components/elements/LocationPoint";
+import SectionWraper from "src/components/SectionWrapper";
+import ArticleImg from "src/components/ArticleImg";
+import LoctionPoint from "src/components/LocationPoint";
 import ArticleDate from "src/components/elements/ArticleDate";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
 

@@ -2,6 +2,8 @@
 import React from "react";
 import Link from "next/link";
 
+import SectionWraper from "src/components/elements/SectionWrapper";
+import ArticleImg from "src/components/elements/ArticleImgArticleImg";
 import {
   ArticlesWraper,
   ArticleWraper,
@@ -10,9 +12,7 @@ import {
   BtnDiv,
 } from "./style";
 
-import SectionWraper from "src/components/elements/SectionWrapper";
-import ArticleImg from "src/components/elements/ArticleImg";
-import LocationPoint from "src/components/elements/LocationPoint";
+import LocationPoint from "src/components/LocationPoint";
 import ArticleDate from "src/components/elements/ArticleDate";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
