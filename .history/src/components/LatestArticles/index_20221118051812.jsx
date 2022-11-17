@@ -18,7 +18,11 @@ import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function LatesetArticles({ blog }) {
   const isTablet = useTabletMqContext();
-  const latestblog = blog.filter((_blog, i) => i < 6);
+  const latestblog = blog.map((_blog, i) => {
+    if (i < 6) {
+      return _blog;
+    }
+  });
   return (
     <SectionWraper where="latestArti">
       <h2>最新の記事</h2>

@@ -24,6 +24,7 @@ export default function LatesetArticles({ blog }) {
       <h2>最新の記事</h2>
       <ArticlesWraper>
         {latestblog.map((_blog) => {
+          console.log(_blog);
           const category = _blog.category;
           const categoryName = { ...category[0] };
           const area = _blog.area;

@@ -18,12 +18,13 @@ import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function LatesetArticles({ blog }) {
   const isTablet = useTabletMqContext();
-  const latestblog = blog.filter((_blog, i) => i < 6);
+  const latestblog = blog.filter((_blog, i) => i > 6);
+  console.log(latestblog);
   return (
     <SectionWraper where="latestArti">
       <h2>最新の記事</h2>
       <ArticlesWraper>
-        {latestblog.map((_blog) => {
+        {blog.map((_blog) => {
           const category = _blog.category;
           const categoryName = { ...category[0] };
           const area = _blog.area;
