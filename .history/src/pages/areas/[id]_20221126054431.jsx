@@ -20,10 +20,7 @@ export default function CategoryId({ blogs, area }) {
 }
 
 export const getStaticPaths = async () => {
-  const data = await client.get({
-    endpoint: "categories",
-    queries: { limit: 100 },
-  });
+  const data = await client.get({ endpoint: "categories" });
   const paths = data.contents.map((content) => `/areas/${content.id}`);
   return { paths, fallback: false };
 };
@@ -36,6 +33,8 @@ export const getStaticProps = async (ctx) => {
       filters: `areas[contains]${id}`,
     },
   });
+  console.log(ctx);
+  //ここに期待しているエリアがこない。
   const data2 = await client.get({
     endpoint: "categories",
     queries: { filters: `id[equals]${id}` },

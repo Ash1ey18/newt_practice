@@ -25,6 +25,7 @@ export const getStaticPaths = async () => {
     queries: { limit: 100 },
   });
   const paths = data.contents.map((content) => `/areas/${content.id}`);
+  console.log(paths);
   return { paths, fallback: false };
 };
 

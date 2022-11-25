@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { LocationDiv, AreaDiv } from "./style";
+import { LocationDiv } from "./style";
 import { useMediaQuery } from "react-responsive";
 
 export default function LoctionPoint({ isTop, areaList }) {
@@ -27,7 +27,7 @@ export default function LoctionPoint({ isTop, areaList }) {
         const areaName = area.name;
         const areaId = area.id;
         return (
-          <AreaDiv key={areaId}>
+          <div key={areaId}>
             <Link href={`/areas/${areaId}`}>
               <a>{areaName}</a>
             </Link>
@@ -39,7 +39,7 @@ export default function LoctionPoint({ isTop, areaList }) {
                 height={isTablet ? (isTop ? 16 : 14) : 14}
               />
             )}
-          </AreaDiv>
+          </div>
         );
       })}
     </LocationDiv>

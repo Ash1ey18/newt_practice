@@ -25,7 +25,3 @@ export const LocationDiv = styled.div`
     height: 24px;
   }
 `;
-
-export const AreaDiv = styled.div`
-  display: flex;
-`;

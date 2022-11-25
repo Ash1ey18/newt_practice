@@ -12,7 +12,7 @@ export default function FeatureAreass() {
       <h2>注目のエリア</h2>
       <StyledUl>
         <StyledLi>
-          <Link href="/areas/hawaii">
+          <Link href="/">
             <StyledDiv content="ハワイ">
               <Image
                 src="/img/img15.jpg"
@@ -24,7 +24,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/thailand">
+          <Link href="">
             <StyledDiv content="タイ">
               <Image
                 src="/img/img16.jpg"
@@ -36,7 +36,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/guam">
+          <Link href="">
             <StyledDiv content="グアム">
               <Image
                 src="/img/img17.jpg"
@@ -48,7 +48,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/hongkong">
+          <Link href="">
             <StyledDiv content="香港">
               <Image
                 src="/img/img18.jpg"
@@ -60,7 +60,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/vietnam">
+          <Link href="">
             <StyledDiv content="ベトナム">
               <Image
                 src="/img/img19.jpg"
@@ -72,7 +72,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/singapore">
+          <Link href="">
             <StyledDiv content="シンガポール">
               <Image
                 src="/img/img20.jpg"
@@ -84,7 +84,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/philippines">
+          <Link href="">
             <StyledDiv content="フィリピン">
               <Image
                 src="/img/img21.jpg"
@@ -96,7 +96,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/korea">
+          <Link href="">
             <StyledDiv content="韓国">
               <Image
                 src="/img/img22.jpg"
@@ -108,7 +108,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/taiwan">
+          <Link href="">
             <StyledDiv content="台湾">
               <Image
                 src="/img/img23.jpg"
@@ -120,7 +120,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/newyork">
+          <Link href="">
             <StyledDiv content="ニューヨーク">
               <Image
                 src="/img/img24.jpg"
@@ -132,7 +132,7 @@ export default function FeatureAreass() {
           </Link>
         </StyledLi>
         <StyledLi>
-          <Link href="/areas/australia">
+          <Link href="">
             <StyledDiv content="オーストラリア">
               <Image
                 src="/img/img25.jpg"

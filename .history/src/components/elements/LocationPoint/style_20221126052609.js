@@ -7,7 +7,6 @@ export const LocationDiv = styled.div`
   font-weight: ${(props) => (props.isTop ? "600" : "500")};
   letter-spacing: 0.05em;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 4px;
   grid-area: location;
@@ -24,8 +23,4 @@ export const LocationDiv = styled.div`
     line-height: ${lh_md};
     height: 24px;
   }
-`;
-
-export const AreaDiv = styled.div`
-  display: flex;
 `;

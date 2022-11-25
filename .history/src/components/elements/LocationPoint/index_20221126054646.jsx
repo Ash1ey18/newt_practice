@@ -26,6 +26,7 @@ export default function LoctionPoint({ isTop, areaList }) {
       {newAreaList.map((area, i) => {
         const areaName = area.name;
         const areaId = area.id;
+        console.log(areaId);
         return (
           <AreaDiv key={areaId}>
             <Link href={`/areas/${areaId}`}>

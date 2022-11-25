@@ -20,11 +20,9 @@ export default function CategoryId({ blogs, area }) {
 }
 
 export const getStaticPaths = async () => {
-  const data = await client.get({
-    endpoint: "categories",
-    queries: { limit: 100 },
-  });
+  const data = await client.get({ endpoint: "categories" });
   const paths = data.contents.map((content) => `/areas/${content.id}`);
+  console.log(path);
   return { paths, fallback: false };
 };
 
