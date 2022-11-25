@@ -3,6 +3,7 @@ import { client } from "libs/client";
 import Layout from "src/components/Layout";
 import BreadCrumb from "src/components/elements/BreadCrumb";
 export default function BlogId({ blog }) {
+  console.log(blog);
   const areaList = blog.areas;
   return (
     <Layout>

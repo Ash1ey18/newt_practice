@@ -4,7 +4,6 @@ import Layout from "src/components/Layout";
 import { client } from "libs/client";
 import BreadCrumb from "src/components/elements/BreadCrumb";
 import ArticleList from "src/components/elements/ArticleList";
-import ArticleHeading from "src/components/elements/ArticleHeading";
 export default function CategoryId({ blogs, area }) {
   const areaObj = area[0];
   if (blogs.length === 0) {
@@ -13,7 +12,6 @@ export default function CategoryId({ blogs, area }) {
   return (
     <Layout>
       <BreadCrumb areaObj={areaObj} />
-      <ArticleHeading areaObj={areaObj} />
       <ArticleList blog={blogs} />
     </Layout>
   );

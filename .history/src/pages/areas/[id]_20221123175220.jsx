@@ -13,7 +13,7 @@ export default function CategoryId({ blogs, area }) {
   return (
     <Layout>
       <BreadCrumb areaObj={areaObj} />
-      <ArticleHeading areaObj={areaObj} />
+      <ArticleHeading />
       <ArticleList blog={blogs} />
     </Layout>
   );

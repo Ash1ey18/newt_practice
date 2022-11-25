@@ -2,7 +2,7 @@
 import React from "react";
 import { client } from "libs/client";
 import Layout from "src/components/Layout";
-import ArticleList from "src/components/elements/ArticleList";
+import ArticleList from "src/components/ArticleList";
 export default function AllBlog({ blog }) {
   return (
     <Layout>

@@ -2,15 +2,17 @@
 import React from "react";
 import Link from "next/link";
 
-import ArticleList from "src/components/elements/ArticleList";
-import { BtnDiv } from "./style";
-import SectionWraper from "src/components/elements/SectionWrapper";
+import ArticleList from "../ArticleList";
+import SectionWraper from "../elements/SectionWrapper";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
-export default function LatestArticles({ latestBlog }) {
+export default function LatesetArticles({ latestBlog }) {
+  const isTablet = useTabletMqContext();
+
   return (
     <SectionWraper where="latestArti">
       <h2>最新の記事</h2>
-      <ArticleList blog={latestBlog} />
+      <ArticleList blog={latestblog} />
       <Link href="/all">
         <a>
           <BtnDiv>

@@ -2,9 +2,9 @@
 import React from "react";
 import Link from "next/link";
 
-import ArticleList from "src/components/elements/ArticleList";
+import ArticleList from "src/components/ArticleList";
 import { BtnDiv } from "./style";
-import SectionWraper from "src/components/elements/SectionWrapper";
+import SectionWraper from "../elements/SectionWrapper";
 
 export default function LatestArticles({ latestBlog }) {
   return (

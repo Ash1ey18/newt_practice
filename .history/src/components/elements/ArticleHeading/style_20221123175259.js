@@ -1,0 +1,6 @@
+import styled from "styled-components";
+
+export const HeadingWrapperDiv = styled.div`
+  background-color: #e4f8ea;
+  text-align: center;
+`;

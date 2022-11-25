@@ -2,11 +2,11 @@
 import React from "react";
 import Link from "next/link";
 
-import ArticleList from "src/components/elements/ArticleList";
+import ArticleList from "../ArticleList";
 import { BtnDiv } from "./style";
-import SectionWraper from "src/components/elements/SectionWrapper";
+import SectionWraper from "../elements/SectionWrapper";
 
-export default function LatestArticles({ latestBlog }) {
+export default function LatesetArticles({ latestBlog }) {
   return (
     <SectionWraper where="latestArti">
       <h2>最新の記事</h2>
