@@ -21,22 +21,16 @@ export default function AreaLayout({ children }) {
     "https://newt-blog-demo.microcms.io/api/v1/blog?filters=recommend%5Bequals%5Dtrue",
     fetcher
   );
-  if (!data) {
-    return (
-      <>
-        <Header />
-        {children}
-        <IntroApp />
-        <FollowUs />
-        <Footer />
-      </>
-    );
-  }
+  // const recomBlog = [...data.contents];
+  console.log(data);
   return (
     <>
       <Header />
       {children}
-      <RecomArticles recomBlogs={data} />
+      {if (!data) {
+    return    <RecomArticles recomBlogs={data} />;
+  }}
+   
       <IntroApp />
       <FollowUs />
       <Footer />

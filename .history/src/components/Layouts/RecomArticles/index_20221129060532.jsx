@@ -13,13 +13,13 @@ import LoctionPoint from "src/components/elements/LocationPoint";
 import ArticleDate from "src/components/elements/ArticleDate";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
-export default function RecomArticles({ recomBlogs }) {
+export default function RecomArticles({ recomBlog }) {
   const isTablet = useTabletMqContext();
   return (
     <SectionWraper type={"recomArti"}>
       <h2>おすすめの記事</h2>
       <ArticlesWraper>
-        {recomBlogs.map((_blog) => {
+        {recomBlog.map((_blog) => {
           const id = _blog.id;
           const imgUrl = _blog.main_img.url;
           const areaList = _blog.areas;

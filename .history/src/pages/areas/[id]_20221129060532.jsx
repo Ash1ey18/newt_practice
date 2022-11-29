@@ -3,9 +3,11 @@ import { client } from "libs/client";
 import BreadCrumb from "src/components/elements/BreadCrumb";
 import ArticleList from "src/components/elements/ArticleList";
 import ArticleHeading from "src/components/elements/ArticleHeading";
-import { getAreaLayout } from "src/components/Layouts/AreaLayout";
-export default function AreaHome({ areaBlogs, area }) {
+import { createGetLayout } from "src/components/Layouts/AreaLayout";
+export default function AreaHome({ areaBlogs, area, recomBlogs }) {
   const areaObj = area[0];
+  const getLayout = createGetLayout(recomBlogs);
+  console.log(getLayout);
   if (areaBlogs.length === 0) {
     return <h1>該当ページはありませんでした。</h1>;
   }
@@ -17,9 +19,8 @@ export default function AreaHome({ areaBlogs, area }) {
     </>
   );
 }
-
-AreaHome.getLayout = getAreaLayout;
-
+console.log(AreaHome.getLayout);
+// AreaHome.getLayout = createGetLayout();
 export const getStaticPaths = async () => {
   const data = await client.get({
     endpoint: "categories",
@@ -37,7 +38,12 @@ export const getStaticProps = async (ctx) => {
       filters: `areas[contains]${id}`,
     },
   });
-
+  const recomBlogData = await client.get({
+    endpoint: "blog",
+    queries: {
+      filters: "recommend[equals]true",
+    },
+  });
   const areaNameData = await client.get({
     endpoint: "categories",
     queries: { filters: `id[equals]${id}` },
@@ -46,6 +52,7 @@ export const getStaticProps = async (ctx) => {
     props: {
       areaBlogs: areaArticleData.contents,
       area: areaNameData.contents,
+      recomBlogs: recomBlogData.contents,
     },
   };
 };

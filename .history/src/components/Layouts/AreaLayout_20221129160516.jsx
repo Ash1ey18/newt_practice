@@ -18,25 +18,16 @@ const fetcher = async () => {
 
 export default function AreaLayout({ children }) {
   const { data } = useSWR(
-    "https://newt-blog-demo.microcms.io/api/v1/blog?filters=recommend%5Bequals%5Dtrue",
+    "https://newt-blog-demo.microcms.io/api/v1/blog?filters=recommend[equals]true",
     fetcher
   );
-  if (!data) {
-    return (
-      <>
-        <Header />
-        {children}
-        <IntroApp />
-        <FollowUs />
-        <Footer />
-      </>
-    );
-  }
+  const recomBlog = [...data.contents];
+  console.log(recomBlog);
   return (
     <>
       <Header />
       {children}
-      <RecomArticles recomBlogs={data} />
+      <RecomArticles recomBlogs={recomBlog} />
       <IntroApp />
       <FollowUs />
       <Footer />

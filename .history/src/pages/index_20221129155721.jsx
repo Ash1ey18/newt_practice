@@ -2,7 +2,6 @@
 import React from "react";
 
 import TopArticle from "src/components/TopArticle";
-import RecomArticles from "src/components/Layouts/RecomArticles";
 import LatestArticles from "src/components/LatestArticles";
 import FeatureAreas from "src/components/FeatureAreas";
 import RecomTags from "src/components/RecomTags";

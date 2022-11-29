@@ -18,8 +18,7 @@ export default function AreaHome({ areaBlogs, area }) {
   );
 }
 
-AreaHome.getLayout = getAreaLayout;
-
+AreaHome.getLayout = getAreaLayout();
 export const getStaticPaths = async () => {
   const data = await client.get({
     endpoint: "categories",
@@ -37,7 +36,12 @@ export const getStaticProps = async (ctx) => {
       filters: `areas[contains]${id}`,
     },
   });
-
+  const recomBlogData = await client.get({
+    endpoint: "blog",
+    queries: {
+      filters: "recommend[equals]true",
+    },
+  });
   const areaNameData = await client.get({
     endpoint: "categories",
     queries: { filters: `id[equals]${id}` },
@@ -46,6 +50,7 @@ export const getStaticProps = async (ctx) => {
     props: {
       areaBlogs: areaArticleData.contents,
       area: areaNameData.contents,
+      recomBlogs: recomBlogData.contents,
     },
   };
 };
