@@ -6,7 +6,7 @@ export default function BlogId({ blog }) {
   const areaList = blog.areas;
   return (
     <Layout>
-      <BreadCrumb areaObj={areaList[1]} />
+      <BreadCrumb navObj={areaList[1]} />
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
       {areaList.map((_area) => {
@@ -29,6 +29,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (ctx) => {
   const id = ctx.params.id;
+  console.log(data);
   const data = await client.get({ endpoint: "blog", contentId: id });
   return {
     props: {
