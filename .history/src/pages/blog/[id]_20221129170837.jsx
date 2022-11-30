@@ -1,11 +1,11 @@
 import React from "react";
 import { client } from "libs/client";
+import Layout from "src/components/Layouts/HomeLayout";
 import BreadCrumb from "src/components/elements/BreadCrumb";
-import { getAreaLayout } from "src/components/Layouts/AreaLayout";
-export default function Blog({ blog }) {
+export default function BlogId({ blog }) {
   const areaList = blog.areas;
   return (
-    <>
+    <Layout>
       <BreadCrumb navObj={areaList[1]} />
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
@@ -17,10 +17,10 @@ export default function Blog({ blog }) {
           __html: `${blog.body}`,
         }}
       ></div>
-    </>
+    </Layout>
   );
 }
-Blog.getLayout = getAreaLayout;
+
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "blog" });
   const paths = data.contents.map((content) => `/blog/${content.id}`);

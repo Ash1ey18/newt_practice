@@ -1,7 +1,8 @@
 import React from "react";
 import { client } from "libs/client";
-import NavigationHeading from "src/components/NavigationHeading";
+import BreadCrumb from "src/components/elements/BreadCrumb";
 import ArticleList from "src/components/elements/ArticleList";
+import ArticleHeading from "src/components/elements/ArticleHeading";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
 export default function AreaHome({ areaBlogs, area }) {
   const areaObj = area[0];
@@ -10,7 +11,8 @@ export default function AreaHome({ areaBlogs, area }) {
   }
   return (
     <>
-      <NavigationHeading navObj={areaObj} />
+      <BreadCrumb navObj={areaObj} />
+      <ArticleHeading navObj={areaObj} />
       <ArticleList blog={areaBlogs} />
     </>
   );

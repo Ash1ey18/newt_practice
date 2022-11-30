@@ -1,14 +1,16 @@
 import React from "react";
 import { client } from "libs/client";
 import ArticleList from "src/components/elements/ArticleList";
-import NavigationHeading from "src/components/NavigationHeading";
+import BreadCrumb from "src/components/elements/BreadCrumb";
+import ArticleHeading from "src/components/elements/ArticleHeading";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
 export default function TagHome({ blog, tag }) {
   const tagObj = tag[0];
 
   return (
     <>
-      <NavigationHeading navObj={tagObj} />
+      <BreadCrumb navObj={tagObj} />
+      <ArticleHeading navObj={tagObj} />
       <ArticleList blog={blog} />
     </>
   );

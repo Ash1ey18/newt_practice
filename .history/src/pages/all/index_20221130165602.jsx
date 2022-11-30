@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { client } from "libs/client";
-import NavigationHeading from "src/components/NavigationHeading";
+import BreadCrumb from "src/components/elements/BreadCrumb";
+import ArticleHeading from "src/components/elements/ArticleHeading";
 import ArticleList from "src/components/elements/ArticleList";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
 export default function AllBlog({ blog, area }) {
   const areaObj = area[0];
   return (
     <>
-      <NavigationHeading navObj={areaObj} />
+      <BreadCrumb navObj={areaObj} />
+      <ArticleHeading navObj={areaObj} />
       <ArticleList blog={blog} />
     </>
   );
