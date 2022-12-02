@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeee;
   padding: 24px;
   text-align: center;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     display: grid;
     grid-template:
       "title iconList"

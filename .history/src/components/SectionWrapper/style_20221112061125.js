@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 
 export const Section = styled.section`
   padding: 24px 0 32px;
@@ -9,7 +9,7 @@ export const Section = styled.section`
     props.type === "recomArti" ? "#FAFAFA" : undefined};
   @media only screen and (min-width: ${tabletWidth}) {
     padding: 32px 0 64px;
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
   }
   > h2 {
     font-size: 20px;

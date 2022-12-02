@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 
 export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;
   background-color: #f6f6f6;
   padding: 0 24px;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: auto;
     padding: 0;
   }

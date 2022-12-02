@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 export const Styledaside = styled.aside`
   border-top: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: 0 auto;
     padding: 0;
     display: grid;

@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
 export const Nav = styled.nav`
   padding: 32px 0 40px;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: auto;
     padding: 39px 0 36px;
     display: grid;
@@ -86,7 +86,7 @@ export const LowerAreadiv = styled.div`
   padding: 32px 0 40px;
   border-top: 1px solid #e0e0e0;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: auto;
     padding: 22px 0 76px;
     display: grid;

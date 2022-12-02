@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {
   tabletWidth,
-  contentsMaxWidth,
+  homeMaxWidth,
   marginTop,
   lh_md,
   lh_latestArtiTitle,
@@ -11,7 +11,7 @@ export const ArticlesWraper = styled.div`
   margin-left: 20px;
   margin-right: 20px;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: 16px auto 0;
   }
 `;

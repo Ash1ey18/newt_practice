@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 
 export const TagsWrapperDiv = styled.div`
   background-color: #fafafa;
@@ -9,7 +9,7 @@ export const TagsWrapperDiv = styled.div`
   border-radius: 5px;
 
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: 32px auto 0;
   }
 `;

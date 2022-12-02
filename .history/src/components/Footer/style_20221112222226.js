@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 
 export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;
@@ -16,7 +16,7 @@ export const Nav = styled.nav`
     padding: 39px 0 36px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: auto;
   }
 `;

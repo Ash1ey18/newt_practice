@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 export const ArticlesWraper = styled.div`
   margin-top: 12px;
   margin-left: 20px;
   margin-right: 20px;
   @media only screen and (min-width: ${tabletWidth}) {
     margin: 16px auto 0;
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
   }
 `;
 
@@ -64,7 +64,7 @@ export const ArtiDescriotn = styled.p`
 
 export const BtnDiv = styled.div`
   height: 48px;
-  max-width: ${contentsMaxWidth};
+  max-width: ${homeMaxWidth};
   border: 1px solid #1f1f1f;
   border-radius: 30px;
   margin: 30px 24px 0 24px;

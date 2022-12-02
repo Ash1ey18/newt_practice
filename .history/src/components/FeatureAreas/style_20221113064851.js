@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 export const StyledUl = styled.ul`
   list-style: none;
   margin: 31px 20px 0;
@@ -7,7 +7,7 @@ export const StyledUl = styled.ul`
   flex-direction: column;
   gap: 16px;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: 48px auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

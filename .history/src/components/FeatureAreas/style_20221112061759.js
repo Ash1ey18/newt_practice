@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 export const StyledUl = styled.ul`
-  max-width: ${contentsMaxWidth};
+  max-width: ${homeMaxWidth};
   list-style: none;
   margin: 31px 20px 0;
   display: flex;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 export const ArticlesWraper = styled.div`
-  max-width: ${contentsMaxWidth};
+  max-width: ${homeMaxWidth};
   margin: 19px 20px 0;
   display: grid;
   grid-template:

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tabletWidth, contentsMaxWidth } from "src/variables";
+import { tabletWidth, homeMaxWidth } from "src/variables";
 export const ArticlesWraper = styled.div`
   margin: 19px 20px 0;
   display: grid;
@@ -10,7 +10,7 @@ export const ArticlesWraper = styled.div`
     /1fr 1fr;
   gap: 20px 15px;
   @media only screen and (min-width: ${tabletWidth}) {
-    max-width: ${contentsMaxWidth};
+    max-width: ${homeMaxWidth};
     margin: 32px auto 0;
     display: grid;
     grid-template:
