@@ -7,10 +7,12 @@ import SectionWraper from "src/components/elements/SectionWrapper";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 import {
+  AAA,
   ArticleContentdiv,
   ArticlesWraper,
   ArticleWraper,
   Title,
+  Wspan,
 } from "./style";
 
 export default function RecomArticles({ recomBlogs }) {
@@ -18,6 +20,10 @@ export default function RecomArticles({ recomBlogs }) {
   return (
     <SectionWraper type={"recomArti"}>
       <h2>おすすめの記事</h2>
+      <AAA>
+        <Wspan>ｆｋぁｓｄｆｊｄｓｋｌ</Wspan>
+        <Wspan>ssssss</Wspan>
+      </AAA>
       <ArticlesWraper>
         {recomBlogs.map((_blog) => {
           return (

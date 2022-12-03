@@ -32,10 +32,10 @@ export default function RecomArticles({ recomBlogs }) {
                   <Link href={`/blog/${_blog.id}`}>{_blog.title}</Link>
                 </Title>
                 {isTablet && (
-                  <>
+                  
                     <LoctionPoint areaList={_blog.areas} />
                     <ArticleDate utcDate={_blog.publishedAt} />
-                  </>
+                  
                 )}
               </ArticleContentdiv>
             </ArticleWraper>

@@ -1,6 +1,10 @@
 import { homeMaxWidth, lh_recomArtiTitle, tabletWidth } from "src/variables";
 import styled from "styled-components";
-
+export const AAA = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+`;
 export const ArticlesWraper = styled.div`
   margin: 19px 20px 0;
   display: grid;

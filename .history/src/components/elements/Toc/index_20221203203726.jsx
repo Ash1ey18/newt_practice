@@ -43,7 +43,7 @@ export default function Toc({ toc }) {
   const tocList = TocHander(isSeeMore ? newToc.length : 6);
   return (
     <>
-      {Boolean(newToc.length) && (
+      {toc && (
         <TocSection>
           <Title>Contents</Title>
           <TocContents>{tocList}</TocContents>

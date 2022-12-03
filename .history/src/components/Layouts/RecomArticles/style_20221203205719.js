@@ -1,6 +1,5 @@
 import { homeMaxWidth, lh_recomArtiTitle, tabletWidth } from "src/variables";
 import styled from "styled-components";
-
 export const ArticlesWraper = styled.div`
   margin: 19px 20px 0;
   display: grid;
@@ -34,7 +33,7 @@ export const ArticleContentdiv = styled.div`
     padding: 16px;
     display: flex;
     flex: auto;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 `;
 

@@ -5,11 +5,13 @@ export const LocationDiv = styled.div`
   font-size: ${(props) => (props.isTop ? "14px" : "12px")};
   font-weight: ${(props) => (props.isTop ? "600" : "500")};
   letter-spacing: 0.05em;
-  margin-top: ${(props) => (props.isTop ? undefined : "6px")};
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 4px;
+  & span {
+    vertical-align: top;
+  }
   & a {
     color: #00cd67;
     &:hover {

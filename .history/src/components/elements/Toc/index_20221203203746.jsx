@@ -11,6 +11,7 @@ import {
 } from "./style";
 
 export default function Toc({ toc }) {
+  console.log(to);
   const [isSeeMore, setIsSeeMore] = useState(false);
   const newToc = [
     ...toc.map((item) => {
@@ -43,7 +44,7 @@ export default function Toc({ toc }) {
   const tocList = TocHander(isSeeMore ? newToc.length : 6);
   return (
     <>
-      {Boolean(newToc.length) && (
+      {toc && (
         <TocSection>
           <Title>Contents</Title>
           <TocContents>{tocList}</TocContents>

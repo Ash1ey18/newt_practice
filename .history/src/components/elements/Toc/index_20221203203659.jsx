@@ -42,18 +42,14 @@ export default function Toc({ toc }) {
   }
   const tocList = TocHander(isSeeMore ? newToc.length : 6);
   return (
-    <>
-      {Boolean(newToc.length) && (
-        <TocSection>
-          <Title>Contents</Title>
-          <TocContents>{tocList}</TocContents>
-          {tocList.length < 6 && !isSeeMore && (
-            <TocBtn onClick={() => setIsSeeMore((prev) => !prev)}>
-              もっとみる
-            </TocBtn>
-          )}
-        </TocSection>
+  {toc &&  <TocSection>
+      <Title>Contents</Title>
+      <TocContents>{tocList}</TocContents>
+      {tocList.length < 6 && !isSeeMore && (
+        <TocBtn onClick={() => setIsSeeMore((prev) => !prev)}>
+          もっとみる
+        </TocBtn>
       )}
-    </>
+    </TocSection>}
   );
 }

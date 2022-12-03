@@ -5,11 +5,11 @@ export const LocationDiv = styled.div`
   font-size: ${(props) => (props.isTop ? "14px" : "12px")};
   font-weight: ${(props) => (props.isTop ? "600" : "500")};
   letter-spacing: 0.05em;
-  margin-top: ${(props) => (props.isTop ? undefined : "6px")};
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 4px;
+  grid-area: location;
   & a {
     color: #00cd67;
     &:hover {
@@ -26,4 +26,5 @@ export const LocationDiv = styled.div`
 
 export const AreaDiv = styled.div`
   display: flex;
+  line-height: 24px;
 `;

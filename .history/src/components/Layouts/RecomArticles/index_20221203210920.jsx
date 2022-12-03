@@ -18,6 +18,10 @@ export default function RecomArticles({ recomBlogs }) {
   return (
     <SectionWraper type={"recomArti"}>
       <h2>おすすめの記事</h2>
+      <AAA>
+        <div>ｆｋぁｓｄｆｊｄｓｋｌ</div>
+        <div>ssssss</div>
+      </AAA>
       <ArticlesWraper>
         {recomBlogs.map((_blog) => {
           return (

@@ -24,6 +24,11 @@ export const LocationDiv = styled.div`
   }
 `;
 
+export const ImgWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const AreaDiv = styled.div`
   display: flex;
 `;

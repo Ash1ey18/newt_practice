@@ -4,19 +4,21 @@ import Link from "next/link";
 import React from "react";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
-import { AreaDiv, LocationDiv } from "./style";
+import { AreaDiv, ImgWrapper, LocationDiv } from "./style";
 export default function LocationPoint({ isTop, areaList }) {
   const newAreaList = [...areaList];
   const isTablet = useTabletMqContext();
   return (
-    <div>
-      <LocationDiv isTop={isTop}>
-        <Image
-          src="/img/mappoint.svg"
-          alt="Mapポインター"
-          width={14}
-          height={14}
-        />
+    <LocationDiv isTop={isTop}>
+      <div>
+        <ImgWrapper>
+          <Image
+            src="/img/mappoint.svg"
+            alt="Mapポインター"
+            width={14}
+            height={14}
+          />
+        </ImgWrapper>
         {newAreaList.map((area, i) => {
           const areaName = area.name;
           const areaId = area.id;
@@ -36,7 +38,7 @@ export default function LocationPoint({ isTop, areaList }) {
             </AreaDiv>
           );
         })}
-      </LocationDiv>
-    </div>
+      </div>
+    </LocationDiv>
   );
 }
