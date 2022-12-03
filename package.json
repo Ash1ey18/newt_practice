@@ -28,6 +28,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "html-react-parser": "^3.0.4",
+    "jsdom": "^20.0.3",
     "prettier": "^2.7.1",
     "react-responsive": "^8.2.0",
     "styled-components": "^5.3.6",

@@ -18,6 +18,11 @@ import {
   TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
+  const imgUrl = blog.main_img.url;
+  const areaList = blog.areas;
+  const title = blog.title;
+  const description = blog.description;
+  const publishedUtcDate = blog.publishedAt;
   const options = {
     replace: (domNode) => {
       if (domNode.name === "img") {
@@ -29,6 +34,7 @@ export default function Blog({ blog, toc }) {
               alt={domNode.attribs.alt}
               layout="fill"
               objectFit="contain"
+              priority
             />
           </ImgWrapper>
         );
@@ -41,7 +47,7 @@ export default function Blog({ blog, toc }) {
     <Article>
       <TopImgWrapper>
         <Image
-          src={blog.main_img.url}
+          src={imgUrl}
           alt={"トップ画像"}
           layout="fill"
           sizes="(min-width:640px) 50vw"
@@ -50,13 +56,13 @@ export default function Blog({ blog, toc }) {
       </TopImgWrapper>
       <ContentsWrapper>
         <Header>
-          <LocationPoint areaList={blog.areas} />
-          <Title>{blog.title}</Title>
-          <Description>{blog.description}</Description>
-          <Signature publishedUtcDate={blog.publishedAt} />
+          <LocationPoint areaList={areaList} />
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+          <Signature publishedUtcDate={publishedUtcDate} />
         </Header>
         <Banner />
-        <LeadSentence>{blog.description}</LeadSentence>
+        <LeadSentence>{description}</LeadSentence>
         <Toc toc={toc} />
         <BlogContents>{blogContents}</BlogContents>
       </ContentsWrapper>

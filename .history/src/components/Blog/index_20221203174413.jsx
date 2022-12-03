@@ -18,6 +18,8 @@ import {
   TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
+  const description = ;
+  const publishedUtcDate = blog.publishedAt;
   const options = {
     replace: (domNode) => {
       if (domNode.name === "img") {
@@ -53,7 +55,7 @@ export default function Blog({ blog, toc }) {
           <LocationPoint areaList={blog.areas} />
           <Title>{blog.title}</Title>
           <Description>{blog.description}</Description>
-          <Signature publishedUtcDate={blog.publishedAt} />
+          <Signature publishedUtcDate={publishedUtcDate} />
         </Header>
         <Banner />
         <LeadSentence>{blog.description}</LeadSentence>

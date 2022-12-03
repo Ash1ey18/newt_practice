@@ -1,16 +1,17 @@
-import { JSDOM } from "jsdom";
+import { JSDOM } = jsdom;
+
 import { client } from "libs/client";
 import React from "react";
 import Blog from "src/components/Blog";
 import BreadCrumb from "src/components/elements/BreadCrumb";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
-export default function BlogPage({ blog, toc }) {
+export default function BlogPage({ blog }) {
   const areaList = blog.areas;
   return (
     <>
       <BreadCrumb navObj={areaList[1]} />
       {/* 今日作るところ↓↓↓ */}
-      <Blog blog={blog} toc={toc} />
+      <Blog blog={blog} />
     </>
   );
 }
@@ -24,21 +25,9 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (ctx) => {
   const id = ctx.params.id;
   const data = await client.get({ endpoint: "blog", contentId: id });
-  const dom = new JSDOM(data.body);
-  const toc = [];
-  dom.window.document
-    .querySelectorAll("h1, h2, h3, h4, h5, h6")
-    .forEach((heading) => {
-      toc.push({
-        id: heading.id,
-        name: heading.tagName,
-        text: heading.textContent,
-      });
-    });
   return {
     props: {
       blog: data,
-      toc: toc,
     },
   };
 };

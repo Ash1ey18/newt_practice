@@ -18,6 +18,11 @@ import {
   TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
+  // const imgUrl =
+  const areaList = blog.areas;
+  const title = blog.title;
+  const description = blog.description;
+  const publishedUtcDate = blog.publishedAt;
   const options = {
     replace: (domNode) => {
       if (domNode.name === "img") {
@@ -50,13 +55,13 @@ export default function Blog({ blog, toc }) {
       </TopImgWrapper>
       <ContentsWrapper>
         <Header>
-          <LocationPoint areaList={blog.areas} />
-          <Title>{blog.title}</Title>
-          <Description>{blog.description}</Description>
-          <Signature publishedUtcDate={blog.publishedAt} />
+          <LocationPoint areaList={areaList} />
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+          <Signature publishedUtcDate={publishedUtcDate} />
         </Header>
         <Banner />
-        <LeadSentence>{blog.description}</LeadSentence>
+        <LeadSentence>{description}</LeadSentence>
         <Toc toc={toc} />
         <BlogContents>{blogContents}</BlogContents>
       </ContentsWrapper>

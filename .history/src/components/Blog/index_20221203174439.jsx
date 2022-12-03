@@ -18,6 +18,7 @@ import {
   TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
+  // const publishedUtcDate = ;
   const options = {
     replace: (domNode) => {
       if (domNode.name === "img") {

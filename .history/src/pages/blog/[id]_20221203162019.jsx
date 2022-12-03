@@ -4,13 +4,13 @@ import React from "react";
 import Blog from "src/components/Blog";
 import BreadCrumb from "src/components/elements/BreadCrumb";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
-export default function BlogPage({ blog, toc }) {
+export default function BlogPage({ blog }) {
   const areaList = blog.areas;
   return (
     <>
       <BreadCrumb navObj={areaList[1]} />
       {/* 今日作るところ↓↓↓ */}
-      <Blog blog={blog} toc={toc} />
+      <Blog blog={blog} />
     </>
   );
 }
@@ -29,12 +29,15 @@ export const getStaticProps = async (ctx) => {
   dom.window.document
     .querySelectorAll("h1, h2, h3, h4, h5, h6")
     .forEach((heading) => {
-      toc.push({
-        id: heading.id,
-        name: heading.tagName,
-        text: heading.textContent,
-      });
+      console.log(
+        toc.push({
+          id: heading.id,
+          name: heading.tagName,
+          text: heading.textContent,
+        })
+      );
     });
+  console.log(toc);
   return {
     props: {
       blog: data,
