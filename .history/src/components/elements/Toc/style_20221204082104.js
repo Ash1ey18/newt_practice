@@ -7,7 +7,6 @@ export const TocSection = styled.section`
   background-color: #fafafa;
   border-radius: 8px;
   color: #1f1f1f;
-  counter-reset: num 0;
 `;
 
 export const Title = styled.div`
@@ -32,8 +31,7 @@ export const ListTilte = styled.h3`
   letter-spacing: 0.05em;
   padding-left: 32px;
   &::before {
-    counter-increment: num 1;
-    content: counter(num);
+    content: "1";
     position: absolute;
     top: 50%;
     left: 0;

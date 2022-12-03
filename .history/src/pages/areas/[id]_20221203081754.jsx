@@ -6,7 +6,7 @@ import NavigationHeading from "src/components/NavigationHeading";
 export default function AreaHome({ areaBlogs, area }) {
   const areaObj = area[0];
   if (areaBlogs.length === 0) {
-    return <h1>404:該当ページはありませんでした。</h1>;
+    return <h1>該当ページはありませんでした。</h1>;
   }
   return (
     <>

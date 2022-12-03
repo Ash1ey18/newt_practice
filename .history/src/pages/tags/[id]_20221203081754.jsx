@@ -5,9 +5,6 @@ import { getAreaLayout } from "src/components/Layouts/AreaLayout";
 import NavigationHeading from "src/components/NavigationHeading";
 export default function TagHome({ blog, tag }) {
   const tagObj = tag[0];
-  if (blog.length === 0) {
-    return <h1>404:該当ページはありませんでした。</h1>;
-  }
 
   return (
     <>

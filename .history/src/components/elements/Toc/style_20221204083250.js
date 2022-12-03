@@ -7,7 +7,6 @@ export const TocSection = styled.section`
   background-color: #fafafa;
   border-radius: 8px;
   color: #1f1f1f;
-  counter-reset: num 0;
 `;
 
 export const Title = styled.div`

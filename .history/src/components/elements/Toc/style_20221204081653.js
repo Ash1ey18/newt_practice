@@ -7,7 +7,6 @@ export const TocSection = styled.section`
   background-color: #fafafa;
   border-radius: 8px;
   color: #1f1f1f;
-  counter-reset: num 0;
 `;
 
 export const Title = styled.div`
@@ -32,8 +31,7 @@ export const ListTilte = styled.h3`
   letter-spacing: 0.05em;
   padding-left: 32px;
   &::before {
-    counter-increment: num 1;
-    content: counter(num);
+    content: "1";
     position: absolute;
     top: 50%;
     left: 0;
@@ -45,12 +43,11 @@ export const ListTilte = styled.h3`
     width: 24px;
     height: 24px;
     border: 1px solid #1f1f1f;
-    border-radius: 12px;
+    border-radius: 20px;
   }
   @media only screen and (min-width: ${tabletWidth}) {
     line-height: 28px;
     &::before {
-      margin-top: 0;
       top: 0;
       font-size: 14px;
     }
