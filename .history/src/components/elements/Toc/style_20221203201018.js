@@ -7,6 +7,9 @@ export const TocSection = styled.section`
   background-color: #fafafa;
   border-radius: 8px;
   color: #1f1f1f;
+  @media only screen and (min-width: ${tabletWidth}) {
+    border-bottom: 0px;
+  }
 `;
 
 export const Title = styled.div`
@@ -14,12 +17,6 @@ export const Title = styled.div`
   font-weight: 700;
   padding-bottom: 12px;
   border-bottom: 1px solid #cbcbcb;
-  @media only screen and (min-width: ${tabletWidth}) {
-    border-bottom: none;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 33px;
-  }
 `;
 
 export const ListTilte = styled.h3`
@@ -37,19 +34,11 @@ export const ListTilte = styled.h3`
     left: 0;
     font-size: 12px;
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 24px;
     height: 24px;
     border: 1px solid #1f1f1f;
     border-radius: 20px;
-  }
-  @media only screen and (min-width: ${tabletWidth}) {
-    line-height: 28px;
-    &::before {
-      top: 0;
-      font-size: 14px;
-    }
   }
 `;
 
@@ -63,9 +52,6 @@ export const ListItem = styled.li`
   list-style: none;
   letter-spacing: 0.08em;
   line-height: 28px;
-  @media only screen and (min-width: ${tabletWidth}) {
-    padding-left: 32px;
-  }
 `;
 export const TocBtn = styled.button`
   display: block;

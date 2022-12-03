@@ -56,10 +56,6 @@ export const AppBtnWrapper = styled.div`
   margin-top: 10px;
   display: flex;
   column-gap: 8px;
-  @media only screen and (min-width: ${tabletWidth}) {
-    margin-top: 14px;
-    column-gap: 12px;
-  }
   & span {
     vertical-align: top;
   }

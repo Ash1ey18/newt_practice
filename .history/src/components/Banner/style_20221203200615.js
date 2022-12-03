@@ -57,7 +57,6 @@ export const AppBtnWrapper = styled.div`
   display: flex;
   column-gap: 8px;
   @media only screen and (min-width: ${tabletWidth}) {
-    margin-top: 14px;
     column-gap: 12px;
   }
   & span {

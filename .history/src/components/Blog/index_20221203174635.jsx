@@ -15,6 +15,7 @@ import {
   ImgWrapper,
   LeadSentence,
   Title,
+  TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
   const options = {
@@ -38,7 +39,7 @@ export default function Blog({ blog, toc }) {
 
   return (
     <Article>
-      <ImgWrapper>
+      <TopImgWrapper>
         <Image
           src={blog.main_img.url}
           alt={"トップ画像"}
@@ -46,7 +47,7 @@ export default function Blog({ blog, toc }) {
           sizes="(min-width:640px) 50vw"
           priority
         />
-      </ImgWrapper>
+      </TopImgWrapper>
       <ContentsWrapper>
         <Header>
           <LocationPoint areaList={blog.areas} />

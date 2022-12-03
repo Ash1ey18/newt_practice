@@ -74,12 +74,6 @@ export const BlogContents = styled.div`
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #000;
-    @media only screen and (min-width: ${tabletWidth}) {
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 42px;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -92,11 +86,6 @@ export const BlogContents = styled.div`
   & h3 {
     font-size: 18px;
     margin: 32px 0 0;
-    @media only screen and (min-width: ${tabletWidth}) {
-      margin-top: 40px;
-      font-size: 22px;
-      line-height: 33px;
-    }
   }
   & img {
     border-radius: 4px;
@@ -109,10 +98,6 @@ export const BlogContents = styled.div`
     line-height: 28px;
     letter-spacing: 0.08em;
     word-break: break-all;
-    @media only screen and (min-width: ${tabletWidth}) {
-      font-size: 16px;
-      line-height: 33px;
-    }
   }
   & a {
     text-decoration: underline;

@@ -15,6 +15,7 @@ import {
   ImgWrapper,
   LeadSentence,
   Title,
+  TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
   const options = {

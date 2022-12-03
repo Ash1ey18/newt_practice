@@ -94,8 +94,6 @@ export const BlogContents = styled.div`
     margin: 32px 0 0;
     @media only screen and (min-width: ${tabletWidth}) {
       margin-top: 40px;
-      font-size: 22px;
-      line-height: 33px;
     }
   }
   & img {

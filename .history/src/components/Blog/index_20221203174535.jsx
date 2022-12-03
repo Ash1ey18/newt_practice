@@ -15,30 +15,12 @@ import {
   ImgWrapper,
   LeadSentence,
   Title,
+  TopImgWrapper,
 } from "./style";
 export default function Blog({ blog, toc }) {
-  const options = {
-    replace: (domNode) => {
-      if (domNode.name === "img") {
-        return (
-          <ImgWrapper>
-            <Image
-              loading="lazy"
-              src={domNode.attribs.src}
-              alt={domNode.attribs.alt}
-              layout="fill"
-              objectFit="contain"
-            />
-          </ImgWrapper>
-        );
-      }
-    },
-  };
-  const blogContents = parse(blog.body, options);
-
   return (
     <Article>
-      <ImgWrapper>
+      <TopImgWrapper>
         <Image
           src={blog.main_img.url}
           alt={"トップ画像"}
@@ -46,7 +28,7 @@ export default function Blog({ blog, toc }) {
           sizes="(min-width:640px) 50vw"
           priority
         />
-      </ImgWrapper>
+      </TopImgWrapper>
       <ContentsWrapper>
         <Header>
           <LocationPoint areaList={blog.areas} />

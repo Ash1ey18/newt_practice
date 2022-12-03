@@ -3,17 +3,9 @@ import styled from "styled-components";
 export const Article = styled.article`
   max-width: ${blogMaxWidth};
   margin: 0 auto;
-  @media only screen and (min-width: ${tabletWidth}) {
-    padding-top: 24px;
-  }
 `;
 export const ImgWrapper = styled.span`
   position: relative;
-  @media only screen and (min-width: ${tabletWidth}) {
-    display: block;
-    border-radius: 8px;
-    overflow: hidden;
-  }
   > span {
     position: unset !important;
   }
@@ -26,17 +18,11 @@ export const ImgWrapper = styled.span`
 
 export const ContentsWrapper = styled.div`
   margin: 0 20px;
-  @media only screen and (min-width: ${tabletWidth}) {
-    margin: 0;
-  }
 `;
 export const Header = styled.header`
   margin: 16px 0 0;
   padding: 0 0 16px;
   border-bottom: 1px solid #eee;
-  @media only screen and (min-width: ${tabletWidth}) {
-    margin-top: 24px;
-  }
 `;
 
 export const Title = styled.h1`
@@ -45,9 +31,6 @@ export const Title = styled.h1`
   letter-spacing: 0.05em;
   color: #000;
   margin: 8px 0 0;
-  @media only screen and (min-width: ${tabletWidth}) {
-    font-size: 28px;
-  }
 `;
 
 export const Description = styled.p`
@@ -74,12 +57,6 @@ export const BlogContents = styled.div`
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #000;
-    @media only screen and (min-width: ${tabletWidth}) {
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 42px;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -92,11 +69,6 @@ export const BlogContents = styled.div`
   & h3 {
     font-size: 18px;
     margin: 32px 0 0;
-    @media only screen and (min-width: ${tabletWidth}) {
-      margin-top: 40px;
-      font-size: 22px;
-      line-height: 33px;
-    }
   }
   & img {
     border-radius: 4px;
@@ -109,10 +81,6 @@ export const BlogContents = styled.div`
     line-height: 28px;
     letter-spacing: 0.08em;
     word-break: break-all;
-    @media only screen and (min-width: ${tabletWidth}) {
-      font-size: 16px;
-      line-height: 33px;
-    }
   }
   & a {
     text-decoration: underline;

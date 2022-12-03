@@ -37,7 +37,6 @@ export const ListTilte = styled.h3`
     left: 0;
     font-size: 12px;
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 24px;
     height: 24px;
@@ -48,7 +47,8 @@ export const ListTilte = styled.h3`
     line-height: 28px;
     &::before {
       top: 0;
-      font-size: 14px;
+      /* width: 28px;
+      height: 28px; */
     }
   }
 `;
@@ -63,9 +63,6 @@ export const ListItem = styled.li`
   list-style: none;
   letter-spacing: 0.08em;
   line-height: 28px;
-  @media only screen and (min-width: ${tabletWidth}) {
-    padding-left: 32px;
-  }
 `;
 export const TocBtn = styled.button`
   display: block;

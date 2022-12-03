@@ -14,11 +14,11 @@ import {
 export default function Banner() {
   const isTablet = useTabletMqContext();
   return (
-    // <Link href="https://apps.apple.com/app/id1585901351">
-    //   <a target="_blank" rel="noopener noreferrer">
-
-    //   </a>
-    // </Link>
+    <Link href="https://apps.apple.com/app/id1585901351">
+      <a target="_blank" rel="noopener noreferrer">
+        
+      </a>
+    </Link>
     <BannerWrapper>
       <ImageWrapper>
         <Image
