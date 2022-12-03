@@ -1,20 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+
 import {
+  CopyRightp,
   FooterWrapper,
+  Linkli,
+  Linkul,
+  Listli,
+  LowerAreadiv,
   Nav,
   Section,
-  SectionTitleh2,
   SectionListul,
-  Listli,
-  SnsListul,
+  SectionTitleh2,
   Snsli,
-  LowerAreadiv,
-  Linkul,
-  Linkli,
-  CopyRightp,
+  SnsListul,
 } from "./style";
 
 export default function Footer() {

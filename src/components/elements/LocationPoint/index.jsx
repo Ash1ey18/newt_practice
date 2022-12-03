@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { LocationDiv, AreaDiv } from "./style";
+import Link from "next/link";
+import React from "react";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
+
+import { AreaDiv,LocationDiv } from "./style";
 export default function LocationPoint({ isTop, areaList }) {
   const newAreaList = [...areaList];
   const isTablet = useTabletMqContext();

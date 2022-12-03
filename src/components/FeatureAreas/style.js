@@ -1,5 +1,5 @@
+import { homeMaxWidth,tabletWidth } from "src/variables";
 import styled from "styled-components";
-import { tabletWidth, homeMaxWidth } from "src/variables";
 export const StyledUl = styled.ul`
   list-style: none;
   margin: 31px 20px 0;

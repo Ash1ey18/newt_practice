@@ -1,7 +1,7 @@
-import React from "react";
 import { client } from "libs/client";
-import BreadCrumb from "src/components/elements/BreadCrumb";
+import React from "react";
 import Blog from "src/components/Blog";
+import BreadCrumb from "src/components/elements/BreadCrumb";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
 export default function BlogPage({ blog }) {
   const areaList = blog.areas;

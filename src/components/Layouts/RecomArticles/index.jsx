@@ -1,17 +1,17 @@
-import React from "react";
 import Link from "next/link";
-
-import {
-  ArticlesWraper,
-  ArticleWraper,
-  ArticleContentdiv,
-  Title,
-} from "./style";
-import SectionWraper from "src/components/elements/SectionWrapper";
+import React from "react";
+import ArticleDate from "src/components/elements/ArticleDate";
 import ArticleImg from "src/components/elements/ArticleImg";
 import LoctionPoint from "src/components/elements/LocationPoint";
-import ArticleDate from "src/components/elements/ArticleDate";
+import SectionWraper from "src/components/elements/SectionWrapper";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
+
+import {
+  ArticleContentdiv,
+  ArticlesWraper,
+  ArticleWraper,
+  Title,
+} from "./style";
 
 export default function RecomArticles({ recomBlogs }) {
   const isTablet = useTabletMqContext();

@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useContext, createContext } from "react";
+import React, { createContext,useContext, useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { tabletWidth, laptopWidth } from "src/variables";
+import { laptopWidth,tabletWidth } from "src/variables";
 
 export const TabletQueryContext = createContext();
 export const LaptopQueryContext = createContext();

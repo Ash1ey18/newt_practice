@@ -1,8 +1,8 @@
-import React from "react";
 import { client } from "libs/client";
+import React from "react";
 import ArticleList from "src/components/elements/ArticleList";
-import NavigationHeading from "src/components/NavigationHeading";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
+import NavigationHeading from "src/components/NavigationHeading";
 export default function TagHome({ blog, tag }) {
   const tagObj = tag[0];
 

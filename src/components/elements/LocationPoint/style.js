@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { tabletWidth, marginTop } from "src/variables";
+import { marginTop,tabletWidth } from "src/variables";
 import { lh_md } from "src/variables";
+import styled from "styled-components";
 export const LocationDiv = styled.div`
   height: 18px;
   font-size: ${(props) => (props.isTop ? "14px" : "12px")};

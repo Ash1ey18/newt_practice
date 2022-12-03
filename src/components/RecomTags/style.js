@@ -1,5 +1,5 @@
+import { homeMaxWidth,tabletWidth } from "src/variables";
 import styled from "styled-components";
-import { tabletWidth, homeMaxWidth } from "src/variables";
 
 export const TagsWrapperDiv = styled.div`
   background-color: #fafafa;

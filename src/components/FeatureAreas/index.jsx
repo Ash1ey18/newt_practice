@@ -1,10 +1,9 @@
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-
-import { StyledUl, StyledLi, StyledDiv } from "./style";
-
+import Link from "next/link";
+import React from "react";
 import SectionWrapper from "src/components/elements/SectionWrapper";
+
+import { StyledDiv,StyledLi, StyledUl } from "./style";
 
 export default function FeatureAreass() {
   return (

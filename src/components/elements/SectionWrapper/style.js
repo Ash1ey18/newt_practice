@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { tabletWidth } from "src/variables";
+import styled from "styled-components";
 
 export const Section = styled.section`
   padding: 24px 0 32px;

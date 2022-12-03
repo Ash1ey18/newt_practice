@@ -1,15 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+import { useTabletMqContext } from "src/Context/MediaQueryContext";
+
 import {
   FollowUsWrapper,
+  SnsListul,
   Styledaside,
   Styledh1,
   Styledp,
-  SnsListul,
 } from "./style";
-import { useTabletMqContext } from "src/Context/MediaQueryContext";
 
 export default function FollowUs() {
   const isTablet = useTabletMqContext();

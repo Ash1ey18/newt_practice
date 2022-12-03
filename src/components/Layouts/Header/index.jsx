@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-
 import Image from "next/image";
 import Link from "next/link.js";
-import { Container, HeaderSnsListul, SnsListli } from "./style";
+import React from "react";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
+
+import { Container, HeaderSnsListul, SnsListli } from "./style";
 
 export default function Header() {
   const isTablet = useTabletMqContext();

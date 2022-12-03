@@ -1,6 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+
 import { Wraper } from "./style";
 
 export default function ArticleImg({ src, alt, priority, id }) {

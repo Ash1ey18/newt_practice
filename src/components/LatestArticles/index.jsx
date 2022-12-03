@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import Link from "next/link";
-
+import React from "react";
 import ArticleList from "src/components/elements/ArticleList";
-import { BtnDiv } from "./style";
 import SectionWraper from "src/components/elements/SectionWrapper";
+
+import { BtnDiv } from "./style";
 
 export default function LatestArticles({ latestBlog }) {
   return (

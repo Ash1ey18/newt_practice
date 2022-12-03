@@ -1,14 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-
-import TopArticle from "src/components/TopArticle";
-import RecomArticles from "src/components/Layouts/RecomArticles";
-import LatestArticles from "src/components/LatestArticles";
-import FeatureAreas from "src/components/FeatureAreas";
-import RecomTags from "src/components/RecomTags";
-import { getHomeLayout } from "src/components/Layouts/HomeLayout";
-
 import { client } from "libs/client";
+import React from "react";
+import FeatureAreas from "src/components/FeatureAreas";
+import LatestArticles from "src/components/LatestArticles";
+import { getHomeLayout } from "src/components/Layouts/HomeLayout";
+import RecomArticles from "src/components/Layouts/RecomArticles";
+import RecomTags from "src/components/RecomTags";
+import TopArticle from "src/components/TopArticle";
 
 export default function Home({ blogs, areas, tags }) {
   const topArticle = blogs.filter((_blog) => _blog.topArticle);

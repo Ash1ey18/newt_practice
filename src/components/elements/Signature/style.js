@@ -1,4 +1,4 @@
-import { tabletWidth, lh_md } from "src/variables";
+import { lh_md,tabletWidth } from "src/variables";
 import styled from "styled-components";
 
 export const SignatureWrapper = styled.div`

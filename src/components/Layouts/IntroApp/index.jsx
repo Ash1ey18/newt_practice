@@ -1,23 +1,23 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+import {
+  useLaptopMqContext,
+  useTabletMqContext,
+} from "src/Context/MediaQueryContext";
 
 import {
-  IntroAppWrapper,
-  Styledaside,
-  StyledWrapperdiv,
-  ImgWrapper,
-  DownloadIcons,
-  StyledSpan,
-  QRWrapperdiv,
   BtnDiv,
+  DownloadIcons,
+  ImgWrapper,
+  IntroAppWrapper,
+  QRWrapperdiv,
+  Styledaside,
+  StyledSpan,
+  StyledWrapperdiv,
 } from "./style";
-import {
-  useTabletMqContext,
-  useLaptopMqContext,
-} from "src/Context/MediaQueryContext";
 
 export default function IntroApp() {
   const isTablet = useTabletMqContext();

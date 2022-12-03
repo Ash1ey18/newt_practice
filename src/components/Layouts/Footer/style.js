@@ -1,5 +1,5 @@
+import { homeMaxWidth, lh_md,tabletWidth } from "src/variables";
 import styled from "styled-components";
-import { tabletWidth, homeMaxWidth, lh_md } from "src/variables";
 
 export const FooterWrapper = styled.footer`
   border-top: 1px solid #eeeeee;

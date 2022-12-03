@@ -1,19 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-
-import {
-  RcmContainer,
-  TopArticleWrapper,
-  ArticleTitle,
-  ImgWrapper,
-  Contents,
-  Descriotionp,
-} from "./style";
+import Link from "next/link";
+import React from "react";
 import LocationPoint from "src/components/elements/LocationPoint";
 import Signature from "src/components/elements/Signature";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
+
+import {
+  ArticleTitle,
+  Contents,
+  Descriotionp,
+  ImgWrapper,
+  RcmContainer,
+  TopArticleWrapper,
+} from "./style";
 
 export default function TopArticle({ topArticle }) {
   const isTablet = useTabletMqContext();

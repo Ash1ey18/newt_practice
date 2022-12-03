@@ -1,5 +1,5 @@
+import { lh_lg,tabletWidth } from "src/variables";
 import styled from "styled-components";
-import { tabletWidth, lh_lg } from "src/variables";
 
 export const RcmContainer = styled.section`
   background-color: #e4f8ea;

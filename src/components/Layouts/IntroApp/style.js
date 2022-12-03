@@ -1,6 +1,5 @@
-import styled from "styled-components";
-
 import { tabletWidth } from "src/variables";
+import styled from "styled-components";
 
 export const IntroAppWrapper = styled.div`
   width: 100%;

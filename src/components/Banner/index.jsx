@@ -1,14 +1,15 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
+
 import {
-  BannerWrapper,
-  ImageWrapper,
-  BannerRight,
-  Heading,
-  BannerTitle,
   AppBtnWrapper,
+  BannerRight,
+  BannerTitle,
+  BannerWrapper,
+  Heading,
+  ImageWrapper,
 } from "./style";
 export default function Banner() {
   const isTablet = useTabletMqContext();

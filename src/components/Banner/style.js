@@ -1,8 +1,8 @@
-import styled from "styled-components";
 import { tabletWidth } from "src/variables";
-export const BannerWrapper = styled.div`
+import styled from "styled-components";
+export const BannerWrapper = styled.aside`
   height: 111px;
-  margin: 17px 19px 0;
+  margin: 17px 0 0;
   border-radius: 8px;
   background-color: #e4f8ea;
   display: flex;

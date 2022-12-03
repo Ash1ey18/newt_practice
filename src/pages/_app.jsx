@@ -1,5 +1,6 @@
-import React from "react";
 import "../styles/globals.scss";
+
+import React from "react";
 import { MediaQueryProvider } from "src/Context/MediaQueryContext";
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);

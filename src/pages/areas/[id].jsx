@@ -1,8 +1,8 @@
-import React from "react";
 import { client } from "libs/client";
-import NavigationHeading from "src/components/NavigationHeading";
+import React from "react";
 import ArticleList from "src/components/elements/ArticleList";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
+import NavigationHeading from "src/components/NavigationHeading";
 export default function AreaHome({ areaBlogs, area }) {
   const areaObj = area[0];
   if (areaBlogs.length === 0) {

@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+
 import { WrapperNav } from "./style";
 export default function BreadCrumb({ navObj }) {
   const newNavObj = { ...navObj };

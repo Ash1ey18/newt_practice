@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import { client } from "libs/client";
-import NavigationHeading from "src/components/NavigationHeading";
+import React from "react";
 import ArticleList from "src/components/elements/ArticleList";
 import { getAreaLayout } from "src/components/Layouts/AreaLayout";
+import NavigationHeading from "src/components/NavigationHeading";
 export default function AllBlog({ blog, area }) {
   const areaObj = area[0];
   return (
