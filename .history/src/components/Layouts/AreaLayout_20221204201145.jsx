@@ -4,6 +4,7 @@ import { useRecomBlog } from "src/Hooks/useRecomBlog";
 
 import HomeLayout from "./HomeLayout";
 
+const options = { revalidateOnFocus: false, revalidateOnReconnect: false };
 export default function AreaLayout({ children }) {
   const { blog, isLoading, isError } = useRecomBlog();
   console.log("AreaLayout is rendered");

@@ -17,7 +17,9 @@ export default function AreaLayout({ children }) {
   return (
     <HomeLayout>
       {children}
-      {blog && <RecomArticles recomBlogs={blog} />}
+      <SWRConfig value={options}>
+        {blog && <RecomArticles recomBlogs={blog} />}
+      </SWRConfig>
     </HomeLayout>
   );
 }
