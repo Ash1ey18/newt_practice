@@ -13,7 +13,7 @@ import {
 const TestTitle = () => {
   return <Title>Contents</Title>;
 };
-export const SsTitle = React.memo(TestTitle);
+export const ssTitle = 
 
 export default function Toc({ toc }) {
   const [isSeeMore, setIsSeeMore] = useState(false);
@@ -50,7 +50,6 @@ export default function Toc({ toc }) {
     <>
       {Boolean(newToc.length) && (
         <TocSection>
-          <SsTitle />
           <TocContents>{tocList}</TocContents>
           {tocList.length <= 6 && !isSeeMore && (
             <TocBtn onClick={() => setIsSeeMore((prev) => !prev)}>

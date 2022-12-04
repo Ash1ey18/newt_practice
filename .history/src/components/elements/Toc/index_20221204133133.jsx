@@ -51,6 +51,7 @@ export default function Toc({ toc }) {
       {Boolean(newToc.length) && (
         <TocSection>
           <SsTitle />
+          <Title>Contents</Title>
           <TocContents>{tocList}</TocContents>
           {tocList.length <= 6 && !isSeeMore && (
             <TocBtn onClick={() => setIsSeeMore((prev) => !prev)}>
