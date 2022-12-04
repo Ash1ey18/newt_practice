@@ -6,6 +6,7 @@ import HomeLayout from "./HomeLayout";
 
 export default function AreaLayout({ children }) {
   const { blog, isLoading, isError } = useRecomBlog();
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
