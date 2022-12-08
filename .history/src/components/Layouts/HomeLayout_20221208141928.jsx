@@ -14,3 +14,7 @@ export default function HomeLayout({ children }) {
     </>
   );
 }
+
+export const getHomeLayout = (page) => {
+  return <>{page}</>;
+};

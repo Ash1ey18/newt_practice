@@ -1,7 +1,6 @@
 import "../styles/globals.scss";
 
 import React from "react";
-import HomeLayout from "src/components/Layouts/HomeLayout";
 import { MediaQueryProvider } from "src/Context/MediaQueryContext";
 import { SWRConfig } from "swr";
 const options = { revalidateOnFocus: false };
