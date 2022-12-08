@@ -2,12 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: SF Pro Text, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo,
     sans-serif;
   min-height: 100vh;
-  width: 100vw;
 }
 
 a {
@@ -16,7 +13,7 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 ul {
@@ -30,5 +27,14 @@ ul {
   body {
     color: white;
     background: black;
+  }
+}
+
+img {
+  &::after {
+    content: "" !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: black !important;
   }
 }

@@ -19,3 +19,17 @@ a {
 ul {
   padding-inline-start: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.hakunamatata {
+  position: relative !important;
+}

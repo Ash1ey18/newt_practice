@@ -12,7 +12,7 @@ import {
   Styledp,
 } from "./style";
 
-function FollowUs() {
+export default function FollowUs() {
   const isTablet = useTabletMqContext();
   return (
     <FollowUsWrapper>
@@ -89,5 +89,3 @@ function FollowUs() {
     </FollowUsWrapper>
   );
 }
-const MemoFollowUs = React.memo(FollowUs);
-export default MemoFollowUs;

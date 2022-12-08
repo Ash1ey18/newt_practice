@@ -12,8 +12,8 @@ export function MediaQueryProvider({ children }) {
     hydrated ? undefined : { deviceWidth: 1600 }
   );
   const isLaptop = useMediaQuery(
-    { query: `(min-width: ${laptopWidth})` },
-    hydrated ? undefined : { deviceWidth: 1600 }
+    { query: `(min-width: ${laptopWidth})` }
+    // hydrated ? undefined : { deviceWidth: 1600 }
   );
   useEffect(() => {
     setHydrated(true);
