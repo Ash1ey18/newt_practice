@@ -9,7 +9,3 @@ export type SectionWraper_Section_Props = {
 export type ArticleDate_StyledTime_Props = {
   isTop?: boolean;
 };
-
-export type LocationPoint_LocationDiv_Props = {
-  isTop?: boolean;
-};
