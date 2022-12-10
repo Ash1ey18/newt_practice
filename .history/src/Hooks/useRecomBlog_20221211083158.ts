@@ -9,6 +9,7 @@ export const useRecomBlog = () => {
         filters: "recommend[equals]true",
       },
     });
+
     return [...blog.contents];
   };
   const { data, error } = useSWRImmutable(
