@@ -11,15 +11,7 @@ import IntroApp from "./IntroApp";
 const AreaLayout: FC<PropsWithChildren> = ({ children }) => {
   const { blog, isLoading, isError } = useRecomBlog();
   if (isLoading) {
-    return (
-      <>
-        <MemoHeader />
-        {children}
-        <IntroApp />
-        <MemoFollowUs />
-        <Footer />
-      </>
-    );
+    return <div>Loading...</div>;
   }
   if (isError) {
     return <div>エラーです。</div>;

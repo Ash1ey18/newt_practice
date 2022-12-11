@@ -4,7 +4,6 @@ import { GetStaticProps, NextPageWithLayout } from "next";
 import React from "react";
 import FeatureAreas from "src/components/FeatureAreas";
 import LatestArticles from "src/components/LatestArticles";
-import { getHomeLayout } from "src/components/Layouts/HomeLayout";
 import RecomArticles from "src/components/Layouts/RecomArticles";
 import RecomTags from "src/components/RecomTags";
 import TopArticle from "src/components/TopArticle";
@@ -28,7 +27,7 @@ const Home: NextPageWithLayout<Home_Props> = ({
   );
 };
 
-Home.getLayout = getHomeLayout;
+const Home.getLayout = getHomeLayout
 
 export default Home;
 

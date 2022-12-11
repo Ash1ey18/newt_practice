@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC } from "react";
+import React, { FC, memo } from "react";
 import LocationPoint from "src/components/elements/LocationPoint";
 import Signature from "src/components/elements/Signature";
 import { useTabletMqContext } from "src/Context/MediaQueryContext";
@@ -56,4 +56,6 @@ const TopArticle: FC<TopArticle_Props> = ({ topArticles }) => {
   );
 };
 
-export default TopArticle;
+const MemoTopArticle = memo(TopArticle);
+
+export default MemoTopArticle;

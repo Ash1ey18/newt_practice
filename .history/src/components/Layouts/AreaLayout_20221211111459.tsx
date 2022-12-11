@@ -15,6 +15,7 @@ const AreaLayout: FC<PropsWithChildren> = ({ children }) => {
       <>
         <MemoHeader />
         {children}
+        {blog && <RecomArticles recomBlogs={blog} />}
         <IntroApp />
         <MemoFollowUs />
         <Footer />

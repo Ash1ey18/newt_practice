@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link.js";
 import React, { FC, memo } from "react";
-import { useTabletMqContext } from "src/Context/MediaQueryContext";
+import { useTabletMqContext } from "src/Hooks/MediaQueryContext";
 
 import { Container, HeaderSnsListul, SnsListli } from "./style";
 

@@ -2,7 +2,8 @@ import "../styles/globals.scss";
 
 import { AppPropsWithLayout } from "next/app";
 import React from "react";
-import { MediaQueryProvider } from "src/Context/MediaQueryContext";
+import HomeLayout from "src/components/Layouts/HomeLayout";
+import { MediaQueryProvider } from "src/Hooks/useMediaQueryContext";
 import { SWRConfig } from "swr";
 const options = { revalidateOnFocus: false };
 
