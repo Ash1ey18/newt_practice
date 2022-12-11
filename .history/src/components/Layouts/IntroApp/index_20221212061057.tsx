@@ -3,7 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import {
+  useLaptopMqContext,
+  useMediaQueryContext,
+  useTabletMqContext,
+} from "src/Hooks/useMediaQueryContext";
 
 import {
   BtnDiv,

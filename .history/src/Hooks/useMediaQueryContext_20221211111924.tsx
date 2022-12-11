@@ -1,18 +1,11 @@
-import React, {
-  createContext,
-  FC,
-  PropsWithChildren,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { laptopWidth, tabletWidth } from "src/variables";
 
 export const TabletQueryContext = createContext(false);
 export const LaptopQueryContext = createContext(false);
 
-export const MediaQueryProvider: FC<PropsWithChildren> = ({ children }) => {
+export const useMediaQueryContext = () => {
   const [hydrated, setHydrated] = useState(false);
   const isTablet = useMediaQuery(
     { query: `(min-width: ${tabletWidth})` },
@@ -25,18 +18,5 @@ export const MediaQueryProvider: FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
     setHydrated(true);
   }, []);
-  return (
-    <TabletQueryContext.Provider value={isTablet}>
-      <LaptopQueryContext.Provider value={isLaptop}>
-        {children}
-      </LaptopQueryContext.Provider>
-    </TabletQueryContext.Provider>
-  );
+  return { isTablet, isLaptop };
 };
-
-export function useTabletMqContext() {
-  return useContext(TabletQueryContext);
-}
-export function useLaptopMqContext() {
-  return useContext(LaptopQueryContext);
-}

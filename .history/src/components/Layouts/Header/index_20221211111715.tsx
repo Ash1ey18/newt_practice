@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link.js";
 import React, { FC, memo } from "react";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import { useTabletMqContext } from "src/Hooks/useMediaQueryContext";
 
 import { Container, HeaderSnsListul, SnsListli } from "./style";
 
 const Header: FC = () => {
-  const { isTablet } = useMediaQueryContext();
+  const isTablet = useTabletMqContext();
   return (
     <Container>
       <Link href="/">

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { FC } from "react";
 import LocationPoint from "src/components/elements/LocationPoint";
 import Signature from "src/components/elements/Signature";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import { useTabletMqContext } from "src/Hooks/MediaQueryContext";
 import { TopArticle_Props } from "src/types/article-type";
 
 import {
@@ -17,7 +17,7 @@ import {
 } from "./style";
 
 const TopArticle: FC<TopArticle_Props> = ({ topArticles }) => {
-  const { isTablet } = useMediaQueryContext();
+  const isTablet = useTabletMqContext();
   const blog = topArticles[0];
   const id = blog.id;
   const imgUrl = blog.main_img.url;

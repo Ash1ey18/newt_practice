@@ -1,15 +1,14 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import LocationPoint from "src/components/elements/LocationPoint";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import { useTabletMqContext } from "src/Hooks/useMediaQueryContext";
 import { ArticleList_Props } from "src/types/article-type";
 
 import ArticleDate from "../ArticleDate";
 import ArticleImg from "../ArticleImg";
 import { ArticlesWraper, ArticleWraper, ArtiDescription, Title } from "./style";
 const ArticleList: FC<ArticleList_Props> = ({ blogs }) => {
-  const { isTablet } = useMediaQueryContext();
-
+  const isTablet = useTabletMqContext();
   return (
     <ArticlesWraper>
       {blogs.map((_blog) => {

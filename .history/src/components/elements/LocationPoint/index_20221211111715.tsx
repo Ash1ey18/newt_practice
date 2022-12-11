@@ -2,13 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import { useTabletMqContext } from "src/Hooks/useMediaQueryContext";
 import { LocationPoint_Props } from "src/types/article-type";
 
 import { AreaDiv, LocationDiv } from "./style";
 const LocationPoint: FC<LocationPoint_Props> = ({ isTop, areaList }) => {
   const newAreaList = [...areaList];
-  const { isTablet } = useMediaQueryContext();
+  const isTablet = useTabletMqContext();
   return (
     <div>
       <LocationDiv isTop={isTop}>

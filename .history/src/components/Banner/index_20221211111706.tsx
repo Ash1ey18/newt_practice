@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
-import { useTabletMqContext } from "src/Hooks/useMediaQueryContext";
+import { useTabletMqContext } from "src/Hooks/MediaQueryContext";
 
 import {
   AppBtnWrapper,

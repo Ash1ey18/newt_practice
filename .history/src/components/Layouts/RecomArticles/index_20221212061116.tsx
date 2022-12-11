@@ -4,7 +4,6 @@ import ArticleDate from "src/components/elements/ArticleDate";
 import ArticleImg from "src/components/elements/ArticleImg";
 import LoctionPoint from "src/components/elements/LocationPoint";
 import SectionWraper from "src/components/elements/SectionWrapper";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
 import { RecomBlogs } from "src/types/article-type";
 
 import {

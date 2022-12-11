@@ -3,7 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import {
+  useLaptopMqContext,
+  useTabletMqContext,
+} from "src/Hooks/useMediaQueryContext";
 
 import {
   BtnDiv,
@@ -17,7 +20,8 @@ import {
 } from "./style";
 
 const IntroApp = () => {
-  const { isTablet, isLaptop } = useMediaQueryContext();
+  const isTablet = useTabletMqContext();
+  const isLaptop = useLaptopMqContext();
   return (
     <IntroAppWrapper>
       <Styledaside>

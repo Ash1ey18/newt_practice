@@ -4,7 +4,10 @@ import Link from "next/link";
 import React, { FC } from "react";
 import LocationPoint from "src/components/elements/LocationPoint";
 import Signature from "src/components/elements/Signature";
-import { useMediaQueryContext } from "src/Hooks/useMediaQueryContext";
+import {
+  useMediaQueryContext,
+  useTabletMqContext,
+} from "src/Hooks/useMediaQueryContext";
 import { TopArticle_Props } from "src/types/article-type";
 
 import {
